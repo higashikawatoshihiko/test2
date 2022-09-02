@@ -1,0 +1,450 @@
+/* ======== ヘッダー ======== */
+.main-header {
+  color: #F3B000;
+}
+
+.btn-left-sidevar {
+  box-shadow: none;
+  padding:0;
+}
+
+.text-title {
+  color: #F3B000;
+  font-size:26px;
+}
+
+.user {
+  color: #333333;
+  overflow: visible;
+}
+
+.user .text-useroffice {
+  font-size: 14px;
+  top:1em;
+}
+
+.user .text-username {
+  font-size: 16px;
+}
+
+.icon-dropdown {
+  color: #F3B000;
+  width: 12.504px;
+  height: 8.074px;
+  transform: matrix(1,0,0,1,0,0);
+  margin:1em;
+}
+
+.img-notification {
+  margin-right:3em;
+  margin-top:0.5em;
+
+}
+.icon-menu {
+  padding-bottom:0;
+}
+
+/* ======== ツールバー ======== */
+
+.toolbar-himawari {
+  min-height: 68px;
+  color: white;
+  border-radius: 15px;
+}
+
+.vertical-divider {
+  display: inline-block;
+  min-height: 36px;
+  border-left: 1px solid #DBDAD5;
+}
+
+img.himawari-brand {
+  position: absolute;
+  right: 3.5rem;
+  bottom: 0;
+}
+
+.content-wrapper {
+  background-color: #F4F3EA;
+  color: #994E20;
+  padding:20px;
+   position:relative;
+}
+
+.control-sidebar-knob {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 36px;
+}
+
+.content-wrapper > .content-header {
+  background-color: #f4f3ea;
+  top:4.25rem;
+  padding: 1rem 0;
+}
+
+.navbar {
+  box-shadow: none;
+}
+
+.front {
+  position: sticky;
+  z-index:101;
+  overflow: visible;
+  width:100%;
+}
+
+.date {
+  color:white;
+  font-size: 22px;
+  padding-top:0.5em;
+}
+
+.badge-weekday {
+  color: rgb(237,161,0);
+  background-color: white;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.toggle-nintei {
+  font-size:16px;
+  border: 2px solid white;
+}
+
+/* ======== タブ ======== */
+.content-tabs {
+  background-color:white;
+  border-radius: 0.5px;
+  color: #333333;
+  padding-top:1rem;
+  position:relative;
+}
+
+.himawari-theme.nav-tabs {
+  position: relative;
+}
+
+.himawari-theme.nav-tabs .nav-link {
+  border:1px solid;
+  border-top-color: rgb(222, 226, 230);
+  border-left-color: rgb(222, 226, 230);
+  border-right-color: rgb(222, 226, 230);
+  border-bottom-color: white;
+  color: #994E20;
+  font-size: 14px;
+  margin-right: 0px;
+  height:4.5em;
+  text-align: left;
+  padding-left:1rem;
+  padding-right:0;
+}
+
+.tab-content {
+  background-color: rgb(244,243,234);
+  position:relative;
+  margin-top:2rem ;
+  width: 100%;
+  height:100%;
+}
+
+.nav-link > .active {
+  background-color: white;
+  border-bottom:none;
+  height: 100%
+}
+
+/* ======== 利用者検索サイドバー ======== */
+.menu-open {
+  background-color:rgba(153,78,32,1);
+  border-color:rgba(153,78,32,1);
+  color: white;
+  align-items: center;
+  right: 0;
+  height:100%;
+  position: absolute;
+}
+
+.menu-close {
+  border:1px solid rgba(153,78,32,1);
+  box-shadow: none;
+  margin-top:1px;
+}
+
+.right-sidebar {
+  background-color:rgba(153,78,32,1);
+  border-color:rgba(153,78,32,1);
+  color: white;
+  align-items: center;
+  right: 0;
+  height:100%;
+  margin: 1rem 0;
+  position: fixed;
+  top:4.25rem;
+  width:250px;
+}
+
+.right-sidebar > .offcanvas-header {
+  align-items: stretch;
+  background-color: rgba(153,78,32,1);
+  padding:1px;
+  width:100%;
+}
+
+.right-sidebar > .offcanvas-body {
+  background-color: #F4F3EA;
+  padding:0;
+  width:100%;
+}
+
+.right-sidebar > .offcanvas-body > div {
+  background-color: white;
+  color: #333333;
+  margin: 3px;
+  font-size: 18px;
+  height:3rem;
+  padding:0.5rem;
+}
+
+select {
+  -webkit-appearance: menulist;
+}
+/* ======== 利用者情報 ======== */
+#Tab1 {
+	background-color: white;
+padding:10px;
+}
+
+#Tab1 > .content-wrapper, #Tab1 > .table-riyousya {
+	background-color: white;
+	color: #333333;
+	font-size: 16px;
+	padding: 10px;
+	margin-right: 0px;
+}
+
+#img-photo {
+    width: 118px;
+    height: 118px;
+    overflow: visible;
+    position: absolute;
+    border:1px solid rgba(236,236,236,1);
+    margin:10px;
+    padding:5px;
+}
+
+.riyousya {
+	padding: 10px;
+}
+
+.text-riyousyaname {
+	font-size: 24px;
+}
+
+.text-riyousyayomi {
+	font-size: 16px;
+}
+
+.text-riyousyaage {
+	font-size: 16px;
+}
+
+.text-riyousyano {
+	font-size: 15px;
+	text-align: right;
+}
+
+.ninteikikan {
+  right:1em;
+  padding:15px;
+}
+.text-ninteikikan {
+	font-size: 16px;
+  text-align:left;
+  margin-left:3px;
+  top:2.5em;
+  position:absolute;
+  right:0;
+}
+
+.badge-himawari {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+.badge-nintei {
+  color: #994E20;
+  background-color: #FFE472;
+  font-size:16px;
+  position:absolute;
+  right:0;
+}
+
+.oshirase {
+  background-color:rgba(250,230,230,1);
+  border-radius: 0.5rem;
+  margin-left:140px;
+  padding:5px;
+}
+
+.text-oshirase{
+  color: #CE0E0E;
+  text-align: left;
+}
+
+.badge-oshirase {
+  color: white;
+  background-color: #CE0F0F;
+}
+
+.card {
+	position:relative;
+  overflow: visible;
+  right:0;
+}
+
+.card-header {
+	background-color: rgba(237,161,0,1);
+  border-bottom: none;
+	color: white;
+	height: 54px;
+	padding: 0;
+  font-size:16px;
+}
+
+.card-body {
+	background-color:rgba(255,248,217,1);
+  color:"#333333";
+	height: 360px;
+	padding: 0.5rem;
+  font-size:16px;
+}
+
+.btn-circle {
+/*	width: 44px;
+  height: 44px;*/
+  background-color:rgba(255,248,159,1);
+  border-color:rgba(255,248,159,1);
+  overflow: visible;
+  padding-inline: 0.45rem;
+}
+
+.btn-camera {
+  position:relative;
+  top:100px;
+  left:100px;
+  z-index: 1;
+}
+
+
+.table-riyousya {
+  width:100%;
+}
+
+.tr-riyousya {
+	border-style:dotted;
+	border-color:rgba(204,204,204,1);
+	border-width:1px;
+  border-left:none;
+	border-right:none;
+  height: 70px;
+  position:relative;
+}
+
+.th-riyousya{
+	background-color:rgba(127,112,88,0.176);
+	color:#333333;
+	font-weight: normal;
+	padding: 0.5rem;
+	width: 118px;
+  font-size:16px;
+}
+
+.td-riyousya{
+	color:#333333;
+	font-weight: normal;
+  padding: 0.5rem;
+  margin-right:0px;
+  font-size:16px;
+}
+
+.kankeikikan {
+  margin-top:10px;
+  position:relative;
+  margin:0.5rem 0.5rem;
+}
+
+.th-kankeikikan{
+	background-color: rgba(99,142,30,1);
+  border-radius: 0.5rem;
+	color: white;
+	font-weight: normal;
+	padding: 10px;
+	width: 118px;
+  text-align:center;
+
+}
+
+.td-kankeikikan{
+  background-color:rgba(239,243,232,1);
+  border-bottom-right-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+	font-weight: normal;
+	padding: 10px;
+  font-size:16px;
+}
+
+/* ======== ポップアップ ======== */
+.modal {
+
+  display: block;
+  color:#333333;
+  width: 800px;
+  height: 500px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-dialog {
+  padding: 0 0;
+  margin: 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-content {
+  width:800px;
+}
+
+.modal-header{
+  background-color:rgb(244, 243, 234);
+  text-align: center;
+  border-style: none;
+}
+
+.modal-body{
+  margin:1em;
+  padding:1em;
+  border-color: rgba(236,236,236,1);
+  border-style:solid;
+  border-width: 1px;
+  border-radius: 0.5rem;
+}
+
+.modal-footer{
+  border-style: none; padding-top:0;
+}
+.modal .close-button {
+  background: #994e20;
+  border: 0;
+  border-radius:0.5rem;
+  color: white;
+  font-size:18px;
+  height:2.5em;
+  top: 10px;
+  width:10em;
+  z-index: 1;
+}

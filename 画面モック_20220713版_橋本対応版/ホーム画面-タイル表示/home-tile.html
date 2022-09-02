@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ホーム画面-タイル表示</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdb-ui-kit@4.2.0/css/mdb.min.css">
+  <link rel="stylesheet" href="../common/himawari.css">
+  <link rel="stylesheet" href="home-tile.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdb-ui-kit@4.2.0/js/mdb.min.js"></script>
+  <script src="home-tile.js"></script>
+</head>
+
+<body class="hold-transition sidebar-collapse layout-fixed layout-navbar-fixed">
+	<div class="wrapper">
+		<!--ヘッダ-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light front" style="position:fixed">
+      <div class="container-fluid">
+        <button class="btn btn-left-sidevar" type="button" data-bs-toggle="offcanvas" data-bs-target="#left-nav" aria-controls="left-nav">
+          <a class="nav-link icon-menu"><img src="../icons/menu.svg"></a>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item">
+              <span class="navbar-brand">
+                <div class="text-title"><b>ひまわりTab</b></div>
+              </span>
+            </li>
+            <li class="nav-item">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="form-inline" style="margin-left:1em">
+                <button type="button" class="himawari-theme btn btn-outline-warning" style="border-radius: 10px;">
+                  <img class="mr-2" src="../icons/linkage.svg">連携
+                  <span class="align-top" style="font-size: 0.5rem; color: #ED6B26;">●</span>
+                </button>
+              </div>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <div class = "img-notification">
+              <a href="">
+                <img src="../icons/bell.svg">
+                <span class="badge rounded-pill badge-notification bg-danger">1</span>
+              </a>
+            </div>
+            <div>
+              <div class="text-useroffice">Flowers NEXTひまわり</div>
+              <div class="text-username">鈴木 康平</div>
+            </div>
+            <div><i class="fa-solid fa-angle-down icon-dropdown"></i></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- サイドメニュー -->
+    <div class="offcanvas offcanvas-start main-sidebar" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="left-nav" aria-labelledby="left-nav-label">
+      <div class="offcanvas-body sidebar">
+        <div class="menu">ホーム</div>
+        <div class="menu">各種設定</div>
+        <div class="menu">パスワード変更</div>
+        <div class="menu">ログアウト</div>
+        <hr class="hr">
+        <div class="menu">コンダクトホームページ</div>
+        <div class="menu">お問い合わせ</div>
+      </div>
+    </div>
+
+    <!--検索領域-->
+		<div class="content-wrapper">
+			<div class="content-header front ps-0 pb-0 mb-0" >
+			  <nav class="navbar navbar-expand toolbar-himawari bg-himawari">
+          <div class="container-fluid">
+            <div class="d-flex align-items-center" style="align-items:center">
+              <div>
+                <label class="mx-2"><img class="mr-2" src="../icons/calendar.svg">
+                </label>
+              </div>
+              <div >
+                <span class="date">2022年6月16日</span>
+                <span class="badge badge-himawari badge-weekday rounded-circle">木</span>
+              </div>
+            </div>
+            <div class="me-5">
+              <ul class="navbar-nav mb-2 mb-lg-0 me-5 align-items-center">
+                <li class="nav-item">
+                  <select class="himawari-theme form-select mx-2" style="width:100px">
+                    <option>あ行</option>
+                  </select>
+                </li>
+                <li>
+                  <button type="button" class="himawari-theme btn btn-light mx-2"><img class="mr-2" src="../icons/search.svg">詳細検索</button>
+                </li>
+                <li>
+                  <span class="vertical-divider mx-2"></span>
+                </li>
+                <li>
+                  <div class="btn-group btn-group-toggle mx-2" data-toggle="buttons">
+                    <a class="himawari-theme btn btn-light" href="../ホーム画面-リスト表示/home-list.html">
+                      <img src="../icons/list-view.svg">
+                    </a>
+                    <a class="himawari-theme btn btn-light active">
+                      <img src="../icons/grid-view.svg"></i>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <img class="himawari-brand" src="../images/himawari.png">
+          </div>
+        </nav>
+      </div>
+      <div class="content">
+        <div class="d-flex flex-row justify-content-between flex-wrap himawari-card-tile">
+          <div class="card himawari-card" data-sample="card">
+            <a href="../利用者情報/riyousyainfo.html" class="card-link">
+            <span>
+              <img class="card-corner" data-sample="card-corner" src="../icons/corner.svg" >
+              <img src="../icons/pin.svg" style="position:absolute; top:5px;right:5px;">
+            </span>
+            <div class="card-content p-2">
+              <div class="d-flex flex-row">
+                <img class="flex-shrink-1 mr-2" src="../icons/avatar-male.svg" data-sample="avatar">
+                <div class="flex-grow-1">
+                  <div class="patient-name" data-sample="name">秋田 次生</div>
+                  <div class="patient-csid">0000000000</div>
+                  <div class="patient-birthday">男 83歳　S13.12.1</div>
+                </div>
+              </div>
+              <div class="d-flex flex-row justify-content-between mb-1">
+                <div class="badge badge-himawari badge-nintei px-3" data-sample="nintei">介3</div>
+                <div class="oshirase mr-2">
+                  <label class="badge badge-himawari badge-oshirase" for="pop-up" data-sample="oshirase">保</label>
+                  <input type="checkbox" id="pop-up">
+                  <div class="overlay">
+	                <div class="window">
+		              <label class="close" for="pop-up">×</label>
+		              <p class="text">有効期限は○○です。</p>
+	             </div>
+            </div>
+                  <span data-sample="oshirase_label">〜4/30</span>
+                  
+                </div>
+              </div>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+
+</html>

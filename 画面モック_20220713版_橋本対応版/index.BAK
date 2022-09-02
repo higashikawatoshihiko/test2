@@ -1,0 +1,22 @@
+<html>
+<title>ひまわりWeb</title>
+<body>
+<h1>画面モック_20220628版</h1>
+<ul>
+  <li><a href="./icons/preview.html" target="_blank">アイコン一覧</a></li>
+  <li><a href="./ホーム画面-タイル表示/home-tile.html" target="_blank">ホーム画面-タイル表示</a></li>
+  <li><a href="./ホーム画面-リスト表示/home-list.html" target="_blank">ホーム画面-リスト表示</a></li>
+  <li><a href="./サービス計画書(１)(２)/serviceplan.html" target="_blank">サービス計画書(１)(２)</a></li>
+  <li><a href="./サービス計画書(１)-編集/serviceplan1-edit.html" target="_blank">サービス計画書(１)-編集</a></li>
+  <li><a href="./モニタリング総括表/monitoring.html" target="_blank">モニタリング総括表</a></li>
+  <li><a href="./モニタリング総括表-編集/monitoring-edit.html" target="_blank">モニタリング総括表-編集</a></li>
+  <li><a href="./モニタリング総括表-編集-1ページ/monitoring-edit.html" target="_blank">モニタリング総括表-編集-1ページ</a></li>
+  <li><a href="./介護支援経過/kaigosienkeika.html" target="_blank">介護支援経過</a></li>
+  <li><a href="./介護支援経過-編集/kaigosienkeika-edit.html" target="_blank">介護支援経過-編集</a></li>
+  <li><a href="./担当者会議の要点/tantosyakaigi.html" target="_blank">担当者会議の要点</a></li>
+  <li><a href="./担当者会議の要点-編集/tantosyakaigi-edit.html" target="_blank">担当者会議の要点-編集</a></li>
+  <li><a href="./利用者情報/riyousyainfo.html" target="_blank">利用者情報</a></li>
+</ul>
+<a href="../index.html">戻る</a>
+</body>
+</html>

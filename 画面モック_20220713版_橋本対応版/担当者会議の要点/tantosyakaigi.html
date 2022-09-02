@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>担当者会議の要点</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+		integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdb-ui-kit@4.2.0/css/mdb.min.css">
+	<link rel="stylesheet" href="../common/himawari.css">
+	<link rel="stylesheet" href="./tantosyakaigi.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdb-ui-kit@4.2.0/js/mdb.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+<body class="hold-transition sidebar-collapse layout-fixed layout-navbar-fixed">
+	<div class="wrapper">
+		<!--ヘッダ-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light front" style="position:fixed">
+      <div class="container-fluid">
+        <button class="btn btn-left-sidevar" type="button" data-bs-toggle="offcanvas" data-bs-target="#left-nav" aria-controls="left-nav">
+          <a class="nav-link icon-menu"><img src="../icons/menu.svg"></a>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item">
+              <span class="navbar-brand">
+                <div class="text-title"><b>ひまわりTab</b></div>
+              </span>
+            </li>
+            <li class="nav-item">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="form-inline" style="margin-left:1em">
+                <button type="button" class="himawari-theme btn btn-outline-warning" style="border-radius: 10px;">
+                  <img class="mr-2" src="../icons/linkage.svg">連携
+                  <span class="align-top" style="font-size: 0.5rem; color: #ED6B26;">●</span>
+                </button>
+              </div>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <div class = "img-notification">
+              <a href="">
+                <img src="../icons/bell.svg">
+                <span class="badge rounded-pill badge-notification bg-danger">1</span>
+              </a>
+            </div>
+            <div>
+              <div class="text-useroffice">Flowers NEXTひまわり</div>
+              <div class="text-username">鈴木 康平</div>
+            </div>
+            <div><i class="fa-solid fa-angle-down icon-dropdown"></i></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="offcanvas offcanvas-start main-sidebar" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="left-nav" aria-labelledby="left-nav-label">
+      <div class="offcanvas-body sidebar">
+        <div class="menu">ホーム</div>
+        <div class="menu">各種設定</div>
+        <div class="menu">パスワード変更</div>
+        <div class="menu">ログアウト</div>
+        <hr class="hr">
+        <div class="menu">コンダクトホームページ</div>
+        <div class="menu">お問い合わせ</div>
+      </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end offcanvas-offset-top right-sidebar" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="right-nav" aria-labelledby="right-nav-label">
+      <div class="offcanvas-header d-flex flex-column">
+        <div>
+          <div class="d-flex flex-row align-items-center">
+            <div class="flex-grow-1 me-auto ms-1">利用者切り替え</div>
+            <div>
+              <button type="button" class="btn menu-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                <img src="../icons/menu-close.svg">
+              </button>
+            </div>
+          </div>
+        </div>
+        <div >
+          <div class="d-flex flex-row">
+            <div class="p-1 flex-fill">
+              <select class="himawari-theme form-select h-100">
+                <option>あ行</option>
+              </select>
+            </div>
+            <div class="p-1">
+              <button type="button" class=" btn btn-light himawari-theme">
+                <img class="mr-2" src="../icons/sort.svg">並べ替え
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-body sidebar">
+        <div >秋田 次生</div>
+        <div >秋田 照也</div>
+        <div >秋田 茂造</div>
+        <div >天野 慎治</div>
+        <div >荒井 保行</div>
+        <div >池上 康三</div>
+        <div >石塚 秋徳</div>
+        <div >大野 茂平</div>
+        <div >奥野 正次</div>
+        <div >亀井 美紀</div>
+        <div >川原 邦江</div>
+        <div >岸 利恵</div>
+        <div >木村 信弥</div>
+        <div >黒木 知美</div>
+        <div >小西 孝敏</div>
+      </div>
+    </div>
+		<!--検索領域-->
+		<div class="content-wrapper">
+			<div class="content-header front ps-0 pb-0 mb-0">
+			  <nav class="navbar navbar-expand toolbar-himawari bg-himawari">
+          <div class="container-fluid">
+            <div class="d-flex align-items-center" style="align-items:center">
+              <div>
+                <label class="mx-2"><img class="mr-2" src="../icons/calendar.svg"></label>
+              </div>
+              <div >
+                <span class="date">2022年6月16日</span>
+                <span class="badge badge-himawari badge-weekday rounded-circle">木</span>
+                <span class="riyousya">
+                  秋田　次生<font style="font-size:18px; color: rgba(236,236,236,1); font-weight: normal;">　様</font>
+                </span>
+              </div>
+              <div class="btn-group btn-group-toggle ms-3" data-toggle="buttons">
+                <a class="himawari-theme btn btn-light toggle-nintei active">介護</a>
+                <a class="himawari-theme btn btn-light toggle-nintei">予防</a>
+              </div>
+            </div>
+            <div style="margin-right:5rem">
+              <img class="himawari-brand" src="../images/himawari.png">
+              <div>
+                <button type="button" class="btn btn-primary control-sidebar-knob p-0 menu-open" data-bs-toggle="offcanvas" data-bs-target="#right-nav" aria-controls="right-nav">
+                  <img src="../icons/menu-open.svg">
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <ul class="himawari-theme nav nav-tabs nav-fill">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="tab1" href="../利用者情報/riyousyainfo.html">利用者情報</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="tab2" href="#Tab2">ファイル</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="tab3" href="../介護支援経過/kaigosienkeika.html">介護支援経過</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="tab4" href="#Tab4">担当者会議の<br>要点</a>
+          </li>
+          <li class="nav-item" role="presentation" >
+            <a class="nav-link" id="tab5" href="../モニタリング総括表/monitoring.html">モニタリング<br>総括表</a>
+          </li>
+          <li class="nav-item" role="presentation" >
+            <a class="nav-link" id="tab6" href="#Tab6">アセスメント</a>
+          </li>
+          <li class="nav-item" role="presentation" >
+            <a class="nav-link" id="tab7" href="#Tab7">課題整理<br>総括表</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="tab8" href="#Tab8">サービス担当<br>者に対する照会</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="tab9" href="../サービス計画書(１)(２)/serviceplan.html">サービス計画<br>(1)(2)</a>
+          </li>
+        </ul>
+      </div>
+      <!--タブ-->
+      <div class="tab-content" id="nav-tabContent">
+        <!--担当者会議の要点-->
+        <div id="Tab4" class="tab-pane active" role="tabpanel" aria-labelledby="tab4" aria-controls="Tab4">
+          <div class="content-tabs">
+            <div class="container">
+              <div>サービス担当者会議の要点の選択</div>
+              <p></p>
+              <div>変更したい履歴、または新規作成をタップしてください。</div>
+              <div class="d-flex flex-row">
+                <div class="flex-fill" style="margin-right:20px;">
+                  <div class="d-flex flex-column">
+                    <div class="flex-fill">
+                      <div class="d-flex flex-row">
+                        <div class="p-2 " style="text-align:center;width:10%"><span>No.</span></div>
+                        <div class="p-2 " style="text-align:left;width:30%"><span>作成年月日</span></div>
+                        <div class="p-2 " style="text-align:left;width:30%"><span>開催時間</span></div>
+                        <div class="p-2 " style="text-align:left;width:30%"><span>作成者</span></div>
+                      </div>
+                    </div>
+                    <div class="flex-fill">
+                      <button type="button" class="btn btn-primary btn-edit" onclick="location.href='../担当者会議の要点-編集/tantosyakaigi-edit.html'">
+                        <div class="d-flex flex-row">
+                          <div class="p-2" style="text-align:center;width:10%"><span>003</span></div>
+                          <div class="p-2" style="text-align:left;width:30%"><span>令和4年3月1日</span></div>
+                          <div class="p-2" style="text-align:left;width:30%"><span>9:00～11:00</span></div>
+                          <div class="p-2" style="text-align:left;width:30%"><span>鈴木　康平</span></div>
+                        </div>
+                      </button>
+                    </div>
+                    <div class="flex-fill">
+                      <button type="button" class="btn btn-primary btn-edit" onclick="location.href='../担当者会議の要点-編集/tantosyakaigi-edit.html'">
+                        <div class="d-flex flex-row">
+                          <div class="p-2" style="text-align:center;width:10%"><span>002</span></div>
+                          <div class="p-2" style="text-align:left;width:30%"><span>令和4年2月25日</span></div>
+                          <div class="p-2" style="text-align:left;width:30%"><span>9:00～11:00</span></div>
+                          <div class="p-2" style="text-align:left;width:30%"><span>鈴木　康平</span></div>
+                        </div>
+                      </button>
+                    </div>
+                    <div class="flex-fill">
+                      <button type="button" class="btn btn-primary btn-edit" onclick="location.href='../担当者会議の要点-編集/tantosyakaigi-edit.html'">
+                        <div class="d-flex flex-row">
+                          <div class="p-2" style="text-align:center;width:10%"><span>001</span></div>
+                          <div class="p-2" style="text-align:left;width:30%"><span>令和4年2月20日</span></div>
+                          <div class="p-2" style="text-align:left;width:30%"><span>9:00～11:00</span></div>
+                          <div class="p-2" style="text-align:left;width:30%"><span>鈴木　康平</span></div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div >
+                  <span class="vertical-divider mx-2 h-100"></span>
+                </div>
+                <div class="align-self-center"style="margin-left:20px;">
+                  <button type="button" class="btn btn-primary btn-new" onclick="location.href='../担当者会議の要点-編集/tantosyakaigi-edit.html'">新規作成</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
