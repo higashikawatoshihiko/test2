@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>予防サービス支援計画表-編集</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+		integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdb-ui-kit@4.2.0/css/mdb.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/confetti.css">
+	<link rel="stylesheet" href="../common/himawari.css">
+  <link rel="stylesheet" href="../common/flatpickr.css">
+	<link rel="stylesheet" href="./yobouservicesienkeikaku-edit.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdb-ui-kit@4.2.0/js/mdb.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+  <script src="../common/flatpickr.js"></script>
+</head>
+<body class="hold-transition sidebar-collapse layout-fixed layout-navbar-fixed">
+	<div class="wrapper">
+		<!--ヘッダ-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light front" style="position:fixed">
+      <div class="container-fluid">
+        
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+           
+           
+          </ul>
+          <div class="d-flex">
+            <div class = "img-notification">
+              <a href="">
+                <img src="../icons/bell.svg">
+                <span class="badge rounded-pill badge-notification bg-danger">1</span>
+              </a>
+            </div>
+            <div>
+              <div class="text-useroffice">Flowers NEXTひまわり</div>
+              <div class="text-username">鈴木 康平</div>
+            </div>
+            <div><i class="fa-solid fa-angle-down icon-dropdown"></i></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+		<!-- サイドメニュー -->
+    <div class="offcanvas offcanvas-start main-sidebar" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="left-nav" aria-labelledby="left-nav-label">
+      <div class="offcanvas-body sidebar">
+        <div class="menu">ホーム</div>
+        <div class="menu">各種設定</div>
+        <div class="menu">パスワード変更</div>
+        <div class="menu">ログアウト</div>
+        <hr class="hr">
+        <div class="menu">コンダクトホームページ</div>
+        <div class="menu">お問い合わせ</div>
+      </div>
+    </div>
+
+    <!--検索領域-->
+    <div class="content-wrapper">
+      <div id="Tab3" >
+      <div class="content-header front ps-0 pb-0 mb-0">
+        <nav class="navbar navbar-expand toolbar-himawari bg-himawari">
+          <div class="container-fluid">
+            <button type="button" class="btn btn-primary btn-back" onclick="location.href='../予防サービス支援計画表/yobouservicesienkeikaku.html'">戻る</button>
+            <span class="riyousya">
+              秋田　次生<font style="font-size:18px; color: rgba(236,236,236,1); font-weight: normal;">　様</font>
+            </span>
+            <span class="hennshutyu">
+              編集中
+            </span>
+            <span class="headname" style="font-size:17px ;">
+              介護予防サービス・支援計画表（１）
+            </span>
+            <div class="d-flex flex-row mb-3 justify-content-end">
+              <div class="p-2">
+                <button type="button" class="btn btn-primary btn-copy">前回コピー</button>
+                <button type="button" class="btn btn-primary btn-register" onclick="location.href='../予防サービス支援計画表/yobouservicesienkeikaku.html'">登録</button>
+                
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="content">
+       <div class="d-flex pt-2 px-3">
+         <div class="flex-fill">
+            No.<input type="text" size="10">
+            <button type="button" class="btn akikensaku">空番検索</button>
+         </div>
+         <div class="flex-fill">
+            <button type="button" class="btn tugihe" onclick="location.href='../総合的課題/sougoutekikadai.html'">総合的課題、等へ▶</button>
+         </div>
+         <div class="flex-fill">作成年月日　令和4年6月16日</div>
+       </div>
+       <div class="d-flex pt-3">
+        <div class=" px-3">
+            管理日付：<input type="date">
+        </div>
+        <div class="px-3" >
+            <input type="text" value="初回・紹介・継続" size="15">
+            <input type="text" value="認定済・申請中" size="15">
+            <input type="text" value="要支援1・要支援" size="15">
+            <input type="text" value="地域支援事業" size="15">
+        </div>
+       </div>
+       <div class="d-flex">
+        <div class="px-3 pt-3">
+            計画作成者氏名　<img  src="../icons/事例文アイコン.svg">
+            <input type="text" size="10">
+        </div>
+        <div class="px-2 pt-4" style="border-bottom: solid 1px black" >
+            認定念月日　令和4年1月1日　認定の有効期間　令和4年1月1日～令和4年12月31日
+        </div>
+       
+       </div>
+         <div class="d-flex">
+            <div class="px-3 pt-3 pb-3">
+                計画作成変更日　<img  src="../icons/事例文アイコン.svg">
+                <input type="date">
+            </div>
+            <div class="px-3 pt-3" >
+                初回計画作成日　<img  src="../icons/事例文アイコン.svg">
+                <input type="date">
+            </div>
+        </div>
+        <div class="px-2 " >
+           <u> 担当地域包括支援センター</u>
+        </div>
+        <div class="px-2 pt-2 pb-2">
+           <U> 委任の場合：計画作成事業者・事業所及び所在地（連絡先）コンダクト居住介護支援センター</U>
+        </div>
+        <div class="pt=2 takaodai">
+           　　　　　　　　　　<u> 石川県金沢市高尾台11-22-33</u>
+        </div>
+        <div class="px-2">
+            目標とする生活
+        </div>
+        <div class="d-flex px-4  mokuhyo">
+            <div>１日　<img  src="../icons/事例文アイコン.svg"></div>
+            <div><textarea rows="2" cols="38" maxlength="76"></textarea></div>　
+            <div>１年　<img  src="../icons/事例文アイコン.svg"></div>
+            <div><textarea rows="2" cols="38" maxlength="76" ></textarea></div>
+        </div>
+        <br>
+        <div class="px-4 tbl">
+        <table >
+            <tr>
+                <th>アセスメント領域と下剤の状況</th><th>本人・家族の意欲・意向</th><th>領域における課題</th>
+            </tr>
+            <tr>
+                <th>運動・移動について</th><td rowspan="2"><textarea rows="4" cols="28" maxlength="200"></textarea></td><td rowspan="2"><textarea rows="4" cols="28" maxlength="200"></textarea></td>
+            </tr>
+            <tr>
+                <td ><textarea rows="2" cols="28" maxlength="200"></textarea></td>
+            </tr>
+            <tr>
+                <th>日常生活（家庭生活）について</th><td rowspan="2"><textarea rows="4" cols="28" maxlength="200"></textarea></td><td rowspan="2"><textarea rows="4" cols="28" maxlength="200"></textarea></td>
+            </tr>
+            <tr>
+                <td ><textarea rows="2" cols="28" maxlength="200"></textarea></td>
+            </tr>
+            <tr>
+                <th>社会参加、対人関係、<br>コミュニケーションについて</th><td rowspan="2"><textarea rows="4" cols="28" maxlength="200"></textarea></td><td rowspan="2"><textarea rows="4" cols="28" maxlength="200"></textarea></td>
+            </tr>
+            <tr>
+                <td ><textarea rows="2" cols="28" maxlength="200"></textarea></td>
+            </tr>
+            <tr>
+                <th>健康管理について</th><td rowspan="2"><textarea rows="4" cols="28" maxlength="200"></textarea></td><td rowspan="2"><textarea rows="4" cols="28" maxlength="200"></textarea></td>
+            </tr>
+            <tr>
+                <td ><textarea rows="2" cols="28" maxlength="200"></textarea></td>
+            </tr>
+        </table>
+        </div>
+          
+                    
+
+               
+
+             
+              
+            
+             
+              
+             
+            
+          
+          <div class="d-flex flex-row mb-3 justify-content-end">
+            <div class="mb-2 px-3">
+              <button type="button" class="btn btn-delete">この履歴を削除する</button>
+            </div>
+          </div>
+        
+      </div>
+      </div>
+    </div>
+  </div>
+  <script src="../common/application.js"></script>
+  <script src="./kaigosienkeika-edit.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+  <script src="../common/flatpickr.js"></script>
+  <script src="./tantosyakaigi-edit.js"></script>
+</body>
+</html>

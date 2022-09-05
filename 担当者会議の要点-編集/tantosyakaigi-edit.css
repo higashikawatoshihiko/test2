@@ -1,0 +1,399 @@
+/* ======== ヘッダー ======== */
+.main-header {
+  color: #F3B000;
+}
+
+.btn-left-sidevar {
+  box-shadow: none;
+  padding:0;
+}
+
+.text-title {
+  color: #F3B000;
+  font-size:26px;
+}
+
+.user {
+  color: #333333;
+  overflow: visible;
+}
+
+.user .text-useroffice {
+  font-size: 14px;
+  top:1em;
+}
+
+.user .text-username {
+  font-size: 16px;
+}
+
+.icon-dropdown {
+  color: #F3B000;
+  width: 12.504px;
+  height: 8.074px;
+  transform: matrix(1,0,0,1,0,0);
+  margin:1em;
+}
+
+.img-notification {
+  margin-right:3em;
+  margin-top:0.5em;
+
+}
+.icon-menu {
+  padding-bottom:0;
+}
+
+.front{
+  position:sticky;
+  z-index: 1002;
+  overflow: visible;
+  width: 100%;
+}
+
+.navbar{
+  box-shadow:none;
+  height:50px;
+}
+/* ======== ツールバー ======== */
+
+.toolbar-himawari {
+  min-height: 50px;
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+
+}
+
+.vertical-divider {
+  display: inline-block;
+  min-height: 36px;
+  border-left: 1px solid #DBDAD5;
+}
+
+img.himawari-brand {
+  position: absolute;
+  right: 3.5rem;
+  bottom: 0;
+}
+
+.content-wrapper {
+  background-color: #F4F3EA;
+  color: #994E20;
+  padding:20px;
+   position:relative;
+}
+
+.control-sidebar-knob {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 36px;
+}
+
+.content-wrapper > .content-header {
+  background-color: #f4f3ea;
+  top:50px;
+  padding: 1rem 0;
+}
+
+.navbar {
+  box-shadow: none;
+}
+
+.front {
+  position: sticky;
+  z-index:101;
+  overflow: visible;
+  width:100%;
+}
+
+.date {
+  color:white;
+  font-size: 22px;
+  padding-top:0.5em;
+}
+
+.badge-weekday {
+  color: rgb(237,161,0);
+  background-color: white;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.riyousya {
+  background-color: #F3B000;
+  border-radius: 0.5rem;
+  color:white;
+  font-weight: bold;
+  font-size: 22px;
+  margin-left:0.5rem;
+  margin-right:0.5rem;
+  padding: 0rem 1rem;
+}
+
+.hennshutyu{
+  background-color: white;
+  color: rgb(237,161,0);
+  font-weight: normal;
+  padding: 0.3rem 1rem;
+  border-radius: 0.5rem;
+  
+}
+
+.tanntoushakaiginoyouten{
+  font-size: 22px;
+ 
+  
+}
+
+#Tab3{
+  background-color:lightyellow;
+  margin-top: 50px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  
+}
+/* ======== 担当者会議の要点 ======== */
+.content{
+  margin-top: 2.5rem;
+}
+
+.itemname {
+  width:200px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  height: calc(2.25rem + 2px);
+}
+
+.datetime {
+  width:200px;
+}
+
+.Author {
+  margin-left:10px;
+}
+
+.btn-register {
+  border-style:none;
+  background-color: cornflowerblue;
+  width:120px;
+  margin-top:5px;
+  margin-bottom: 8px;
+}
+
+.btn-back {
+  border-style:none;
+  background-color:grey;
+  width:120px;
+  margin-top:5px;
+  margin-bottom: 8px;
+}
+
+.btn-copy {
+  border-style:none;
+  background-color:lightgray;
+  width:130px;
+  margin-top:20px;
+  margin-bottom: 8px;
+  color: black;
+}
+
+.btn-jireibun {
+  border-style:none;
+  background-color:peachpuff;
+  color:#333333;
+  vertical-align: top;
+}
+
+.btn-delete {
+  border-style:none;
+  background-color:darkorange;
+  width:220px;
+  margin-top:5px;
+  color: white;
+  font-size: large;
+}
+
+.table td {
+  padding: 0;
+}
+
+.btn-plus {
+  background-color: aliceblue;
+  /*border: 1px solid black;*/
+  /*padding: 0.07em 0.5em;*/
+  width: 60px;
+}
+
+.btn-minus {
+  background-color: aliceblue;
+  /*border: 1px solid black;*/
+  /*padding: 0.1em 0.65em;*/
+  width: 60px;
+}
+
+#ue{
+  height: 160px;
+}
+
+.memo{
+  color: black;
+  background-color: white;
+  width:490px;
+  padding: 10px;
+  border-radius: 10px;
+  transform: translateX(80px) translateY(-23px);
+  height: 140px;
+  
+}
+.memowrap{
+  background-color: lightgray;
+  width: 580px;
+  border-radius: 10px;
+  height: 160px;
+  color: black;
+  transform: translateX(10px) translateY(-30px);
+
+
+}
+.onsei{
+  background-color: lightgray;
+  padding-left: 10px;
+  transform: translateX(40px) translateY(-30px);
+  border:solid black 1px;
+  width: 350px;
+}
+.onseimemo{
+  text-align: center;
+  color: black;
+  font-size: large;
+}
+.sen{
+  background-color: black;
+  height: 15px;
+  width: 95%;
+}
+hr:after{
+  content: '●';
+  color:yellow;
+  font-size:20px;
+ top:-7px;
+  position: relative;
+  display: inline-block;
+  transform: translateX(60px);
+  
+}
+
+#zikan{
+  background-color: dimgrey;
+  border:solid black 1px;
+  color: white;
+  padding: 2px;
+  margin-right: 10px;
+  width: 60px;
+  text-align: center;
+}
+#rokuon{
+  color: red;
+  width: 60px;
+  margin-right: 10px;
+}
+#saisei{
+  padding: 0ch;
+  margin: 0%;
+  width:60px ;
+  margin-right: 10px;
+}
+#teisi{
+  width: 60px;
+}
+
+
+#b{
+  margin: 10px;
+  width: 100px;
+}
+
+#a{
+  margin: 10px;
+  width: 100px;
+}
+#sakuzyobtn{
+  transform: translateX(20px) translateY(8px);
+  color: red;
+  width: 70px;
+  font-size: large;
+  height: 33px;
+}
+
+.memomemo{
+  font-size: 20px;
+  margin-left: 14px;
+ 
+}
+
+#simei{
+  transform: translateX(200px) translateY(-25px);
+  font-size: large;
+  color: black;
+}
+#sakuseinenngappi{
+  transform: translateX(5px) translateY(-30px);
+  font-size: large;
+  color: black;
+}
+#kaisaibi{
+  transform: translateY(-4.7px);
+  
+  color: black;
+}
+#kaisaibasho{
+  transform: translateX(-40px);
+ 
+  color: black;
+}
+#kaisaizikan{
+  transform: translateX(-30px) translateY(-4.7px);
+ 
+  color: black;
+  
+}
+#kaisaikaisuu{
+  transform: translateY(-4.7px);
+ 
+  color: black;
+}
+
+.number{
+  font-size: large;
+  width: 30px;
+  text-align: center;
+}
+.kaigishussekisha{
+  color: black;
+  font-size: large;
+  transform: translateX(15px);
+}
+
+#text{
+  width: 85%;
+  transform: translateX(120px) translateY(-27px);
+  height:75px;
+}
+
+.flexibility{
+  padding: 10px;
+}
+
+#zikaiyokoku{
+  padding: 10px;
+}
+
+tbody, td, tfoot, th, thead, tr {
+  border: none;
+ 
+}

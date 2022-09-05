@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>目標</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+		integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdb-ui-kit@4.2.0/css/mdb.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/confetti.css">
+	<link rel="stylesheet" href="../common/himawari.css">
+  <link rel="stylesheet" href="../common/flatpickr.css">
+	<link rel="stylesheet" href="./mokuhyou.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdb-ui-kit@4.2.0/js/mdb.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+  <script src="../common/flatpickr.js"></script>
+</head>
+<body class="hold-transition sidebar-collapse layout-fixed layout-navbar-fixed">
+	<div class="wrapper">
+		<!--ヘッダ-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light front" style="position:fixed">
+      <div class="container-fluid">
+        
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+           
+           
+          </ul>
+          <div class="d-flex">
+            <div class = "img-notification">
+              <a href="">
+                <img src="../icons/bell.svg">
+                <span class="badge rounded-pill badge-notification bg-danger">1</span>
+              </a>
+            </div>
+            <div>
+              <div class="text-useroffice">Flowers NEXTひまわり</div>
+              <div class="text-username">鈴木 康平</div>
+            </div>
+            <div><i class="fa-solid fa-angle-down icon-dropdown"></i></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+		<!-- サイドメニュー -->
+    <div class="offcanvas offcanvas-start main-sidebar" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="left-nav" aria-labelledby="left-nav-label">
+      <div class="offcanvas-body sidebar">
+        <div class="menu">ホーム</div>
+        <div class="menu">各種設定</div>
+        <div class="menu">パスワード変更</div>
+        <div class="menu">ログアウト</div>
+        <hr class="hr">
+        <div class="menu">コンダクトホームページ</div>
+        <div class="menu">お問い合わせ</div>
+      </div>
+    </div>
+
+    <!--検索領域-->
+    <div class="content-wrapper">
+      <div id="Tab3" >
+      <div class="content-header front ps-0 pb-0 mb-0">
+        <nav class="navbar navbar-expand toolbar-himawari bg-himawari">
+          <div class="container-fluid">
+            <button type="button" class="btn btn-primary btn-back" onclick="location.href='../予防サービス支援計画表/yobouservicesienkeikaku.html'">戻る</button>
+            <span class="riyousya">
+              秋田　次生<font style="font-size:18px; color: rgba(236,236,236,1); font-weight: normal;">　様</font>
+            </span>
+            <span class="hennshutyu">
+              編集中
+            </span>
+            <span class="headname" style="font-size:22px;">
+              介護予防サービス・支援計画表（２）
+            </span>
+            <div class="d-flex flex-row justify-content-end">
+              <div class="p-2">
+               
+                <button type="button" class="btn btn-primary btn-register" onclick="location.href='../予防サービス支援計画表/yobouservicesienkeikaku.html'">登録</button>
+                
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="content">
+       <div class="d-flex px-4 pt-2 pb-3">
+        <button type="button" class="btn tugihe" onclick="location.href='../総合的課題/sougoutekikadai.html'">◀（１）総合的課題、等へ</button>
+        <div class="px-3">
+        <button type="button" class="btn tugihe">サービス種別、事業所等へ▶</button>
+      </div>
+       </div>
+      <div class="px-4">
+        健康状態について
+      </div>
+      <div style="text-align:center">
+        【本来行うべき支援が実施できない場合】
+      </div>
+      <div class="d-flex kenkouzyoutai px-3">
+        <div class="flex-fill">
+            □主治医意見書、健診結果、観察結果等を踏まえた留意点。<br>
+            <div style="text-align:center">
+            <textarea rows="3" cols="30" maxlength="140"></textarea>
+            </div>
+        </div>
+        <div class="flex-fill">
+            妥当な支援の実施に向けた方針<br>
+            <div style="text-align:center">
+            <textarea rows="3" cols="27" maxlength="125"></textarea>
+            </div>
+        </div>
+        <div class="flex-fill">
+            総合的な方針：生活不活発病の改善・予防ポイント<br>
+            <div style="text-align:center">
+            <textarea rows="3" cols="20" maxlength="168"></textarea>
+             </div>
+        </div>
+      </div>
+      <div class="px-4 pb-3">
+        《事業プログラム》
+      </div>
+      <div class="d-flex">
+      <div class="d-flex flex-column px-5">
+        <div>
+            <div class="pb-2">
+                <input type="checkbox" name="program">運動不足　　　<input type="checkbox" name="program">閉じこもり予防<br>
+            </div>
+            <div class="pb-2">
+            <input type="checkbox" name="program">栄養改善　　　<input type="checkbox" name="program">物忘れ予防<br>
+            </div>
+            <div class="pb=1">
+            <input type="checkbox" name="program">口腔内ケア　　<input type="checkbox" name="program">うつ病
+            </div>
+        </div>
+        <div class="pb-2 pt-1">
+            <button type="button" class="btn kihon">基本チェックリストから取得</button>
+        </div>
+        <div class="pt=2">
+            <input type="checkbox" name="program">該当項目数を印刷する 
+        </div>
+      </div>
+      <div class="align-self-end d-flex flex-fill  justify-content-center">
+      <div class="pl=3">
+        地域包括支援センター<br>　　　の意見<img  src="../icons/事例文アイコン.svg">
+      </div>
+      <div>
+        <textarea placeholder="【意見】" rows="3" cols="30" maxlength="57"></textarea>
+      </div>
+    </div>
+    </div>
+    <div class="d-flex flex-row mb-3 justify-content-end">
+        <div class="mb-2 px-3">
+          <button type="button" class="btn btn-delete">この履歴を削除する</button>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <script src="../common/application.js"></script>
+  <script src="./kaigosienkeika-edit.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+  <script src="../common/flatpickr.js"></script>
+  <script src="./tantosyakaigi-edit.js"></script>
+</body>
+</html>

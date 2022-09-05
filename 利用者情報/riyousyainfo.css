@@ -1,0 +1,554 @@
+/* ======== ヘッダー ======== */
+.main-header {
+  color: #F3B000;
+  
+  
+}
+
+.btn-left-sidevar {
+  box-shadow: none;
+  padding:0;
+}
+
+.text-title {
+  color: #F3B000;
+  font-size:26px;
+}
+
+.user {
+  color: #333333;
+  overflow: visible;
+}
+
+.user .text-useroffice {
+  font-size: 14px;
+  top:1em;
+}
+
+.user .text-username {
+  font-size: 16px;
+}
+
+.icon-dropdown {
+  color: #F3B000;
+  width: 12.504px;
+  height: 8.074px;
+  transform: matrix(1,0,0,1,0,0);
+  margin:1em;
+}
+
+.img-notification {
+  margin-right:3em;
+  margin-top:0.5em;
+}
+
+.icon-menu {
+  padding-bottom:0;
+}
+
+.himawari-home{
+  color:white;
+  background-color:#F3B000;
+  border:none;
+  width: 110px;
+  height:35px;
+ 
+  
+}
+
+.mr-2{
+  margin-bottom: 5px;
+}
+
+/* ======== ツールバー ======== */
+
+.toolbar-himawari {
+  min-height: 50px;
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius:15px;
+}
+
+.vertical-divider {
+  display: inline-block;
+  min-height: 36px;
+  border-left: 1px solid #DBDAD5;
+}
+
+img.himawari-brand {
+  position: absolute;
+  right: 10px;
+  top: -30px;
+}
+
+.content-wrapper {
+  background-color: #F4F3EA;
+  color: #994E20;
+  padding:5px;
+  position:relative;
+ 
+}
+
+.content-wrapper > .content-header {
+  background-color: #F4F3EA;
+  top:50px;
+  padding: 1rem 0;
+  width: 95%;
+  z-index: 102;
+ 
+  
+}
+
+.content-wrapper > .content {
+  padding-top: 2.2rem;
+}
+
+.navbar {
+  box-shadow: none;
+  height: 50px;
+
+  
+  
+   
+}
+
+
+.front {
+  position: sticky;
+  z-index:101;
+  overflow: visible;
+  width:100%;
+  
+}
+
+.date {
+  color:white;
+  font-size: 22px;
+  padding-top:0.5em;
+}
+
+.badge-weekday {
+  color: rgb(237,161,0);
+  background-color: white;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.toggle-nintei {
+  font-size:16px;
+  border: 2px solid white;
+}
+/* ======== タブ ======== */
+.content-tabs {
+  background-color:white;
+  border-radius: 0.5px;
+  color: #333333;
+  padding-top:1rem;
+  position:relative;
+  
+}
+
+.himawari-theme.nav-tabs {
+  position: relative;
+}
+
+.himawari-theme.nav-tabs .nav-link {
+  border:1px solid;
+  border-top-color: rgb(222, 226, 230);
+  border-left-color: rgb(222, 226, 230);
+  border-right-color: rgb(222, 226, 230);
+  border-bottom-color: white;
+  color: #994E20;
+  font-size: 14px;
+  margin-right: 0px;
+  height:4.5em;
+  text-align: left;
+  padding-left:1rem;
+  padding-right:0;
+  padding-bottom: 0px;
+  margin-top: 0px;
+
+}
+
+.tab-content {
+  background-color: rgb(244,243,234);
+  
+  margin-top:2rem ;
+  width: 100%;
+  height:100%;
+}
+
+.nav-link > .active {
+  background-color: white;
+  border-bottom:none;
+  height: 100%
+}
+
+/* ======== 利用者検索サイドバー ======== */
+.menu-open {
+  background-color:rgba(153,78,32,1);
+  border-color:rgba(153,78,32,1);
+  color: white;
+  align-items: center;
+  right: 0;
+  height: 40px;;
+  position: fixed;
+  margin-top: 50px;
+  width: 40px;
+  
+}
+
+.menu-close {
+  border:1px solid rgba(153,78,32,1);
+  box-shadow: none;
+  margin-top:1px;
+}
+
+.right-sidebar {
+  background-color:rgba(153,78,32,1);
+  border-color:rgba(153,78,32,1);
+  color: white;
+  align-items: center;
+  right: 0;
+  height:100%;
+  margin: 1rem 0;
+  position: fixed;
+  top:37px;
+  width:250px;
+}
+
+.right-sidebar > .offcanvas-header {
+  align-items: stretch;
+  background-color: rgba(153,78,32,1);
+  padding:1px;
+  width:100%;
+}
+
+.right-sidebar > .offcanvas-body {
+  background-color: #F4F3EA;
+  padding:0;
+  width:100%;
+}
+
+.right-sidebar > .offcanvas-body > div {
+  background-color: white;
+  color: #333333;
+  margin: 3px;
+  font-size: 18px;
+  height:3rem;
+  padding:0.5rem;
+}
+
+select {
+  -webkit-appearance: menulist;
+}
+/* ======== 利用者情報 ======== */
+#Tab1 {
+	background-color: white;
+padding:10px;
+width: 95%;
+}
+
+#Tab1 > .content-wrapper, #Tab1 > .table-riyousya {
+	background-color: white;
+	color: #333333;
+	font-size: 16px;
+	padding: 10px;
+	margin-right: 0px;
+}
+
+#img-photo {
+    width: 118px;
+    height: 118px;
+    overflow: visible;
+    position: absolute;
+    border:1px solid rgba(236,236,236,1);
+    margin:10px;
+    padding:5px;
+}
+
+.riyousya {
+	padding: 10px;
+}
+
+.text-riyousyaname {
+	font-size: 24px;
+}
+
+.text-riyousyayomi {
+	font-size: 16px;
+}
+
+.text-riyousyaage {
+	font-size: 16px;
+}
+
+.text-riyousyano {
+	font-size: 15px;
+	text-align: right;
+}
+#yokaigo{
+  margin-right: 15px;
+  margin-top: 7px;
+}
+
+.ninteikikan {
+  right:1em;
+  padding:15px;
+  
+  flex-direction:column;
+}
+.text-ninteikikan {
+	font-size: 16px;
+  text-align:left;
+  margin-left:3px;
+  margin-top: 35px;
+  
+  right:0;
+}
+
+.badge-himawari {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+.badge-nintei {
+  color: #994E20;
+  background-color: #FFE472;
+  font-size:16px;
+  position:absolute;
+  right:0;
+}
+
+.oshirase {
+  background-color:rgba(250,230,230,1);
+  border-radius: 0.5rem;
+  margin-left:140px;
+  padding:5px;
+  
+}
+
+.text-oshirase{
+  color: #CE0E0E;
+  text-align: left;
+}
+
+.badge-oshirase {
+  color: white;
+  background-color: #CE0F0F;
+}
+
+.card {
+	position:relative;
+  overflow: visible;
+  right:0;
+
+  
+}
+
+.card-header {
+	background-color: rgba(237,161,0,1);
+  border-bottom: none;
+	color: white;
+	height: 54px;
+	padding: 0;
+  font-size:16px;
+}
+
+.card-body {
+	background-color:rgba(255,248,217,1);
+  color:"#333333";
+	height: 700px;
+	padding: 0.5rem;
+  font-size:16px;
+}
+
+.btn-circle {
+/*	width: 44px;
+  height: 44px;*/
+  background-color:rgba(255,248,159,1);
+  border-color:rgba(255,248,159,1);
+  overflow: visible;
+  padding-inline: 0.45rem;
+}
+
+.btn-camera {
+  position:relative;
+  top:100px;
+  left:100px;
+  z-index: 1;
+}
+
+
+.table-riyousya {
+  width:100%;
+}
+
+.tr-riyousya {
+	border-style:dotted;
+	border-color:rgba(204,204,204,1);
+	border-width:1.5px;
+  border-left:none;
+	border-right:none;
+  height: 70px;
+  position:relative;
+}
+
+.th-riyousya{
+	background-color:rgba(127,112,88,0.176);
+	color:#333333;
+	font-weight: normal;
+	padding: 0.5rem;
+	width: 118px;
+  font-size:16px;
+}
+
+.td-riyousya{
+	color:#333333;
+	font-weight: normal;
+  padding: 0.5rem;
+  margin-right:0px;
+  font-size:16px;
+}
+
+.btn.btn-primary{
+background-color: #994E20;
+border-radius: 0.5rem;
+border:none ;
+color: white;
+height: 33px;
+transform: translateX(70px);
+padding: 5px;
+text-align: center;
+vertical-align: middle;
+
+
+
+
+
+
+}
+
+  
+  .table1{
+      border:1px black solid;
+      border-collapse: collapse;
+    }
+    .th1{
+      border:1px black solid;
+    }
+    
+    .td1{
+      border:1px black solid;
+    }
+    .tr2{
+      border:1px black solid;
+      background-color: #DBDAD5;
+    }
+    .td2{
+      border:1px black solid;
+      background-color:lightyellow;
+      text-align: center;
+    }
+    .tr3{
+      border:1px black solid;
+      background-color:lightyellow;
+    }
+    .tr3{
+      text-align: center;
+    }
+  
+    .table1{
+    width: 800px;
+  }
+  .modal-body{
+    width: 800px;
+    
+  } 
+  
+   
+    
+
+/* ======== ポップアップ ======== */
+.modal {
+
+  /*display: block;*/
+  color:#333333;
+  width: 800px;
+  height: 500px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+ 
+ 
+}
+
+.modal-dialog {
+  padding: 0 0;
+  margin: 0 0;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.modal-content {
+  width:800px;
+}
+
+.modal-header{
+  background-color:rgb(244, 243, 234);
+  text-align: center;
+  border-style: none;
+}
+
+
+
+.modal-footer{
+  border-style: none; padding-top:0;
+}
+.modal .close-button {
+  background: #994e20;
+  border: 0;
+  border-radius:0.5rem;
+  color: white;
+  font-size:18px;
+  height:2.5em;
+  top: 10px;
+  width:10em;
+  z-index: 1;
+}
+#close-button{
+  background-color:royalblue;
+}
+
+.col-8{
+  
+  width: 50%;
+}
+
+#modal2{
+  height: 500px;
+  
+}
+.card-body{
+  line-height: 2;
+}
+#modalbody{
+  padding: 0%;
+}
+
+#btnclose{
+  color: #994E20;
+  
+}
+
+#bodymodal{
+  margin:1em;
+  padding:1em;
+  border-color: rgba(58, 52, 52, 0.192);
+  border-style:solid;
+  border-width: 2px;
+  border-radius: 0.5rem;
+  width: 770px;
+}
+

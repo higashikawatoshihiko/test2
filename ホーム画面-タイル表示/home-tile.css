@@ -1,0 +1,352 @@
+/* ======== ヘッダー ======== */
+.main-header {
+  color: #F3B000;
+  
+}
+
+.btn-left-sidevar {
+  box-shadow: none;
+  padding:0;
+}
+
+.text-title {
+  color: #F3B000;
+  font-size:26px;
+}
+
+.user {
+  color: #333333;
+  overflow: visible;
+}
+
+.user .text-useroffice {
+  font-size: 14px;
+  top:1em;
+}
+
+.user .text-username {
+  font-size: 16px;
+}
+
+.icon-dropdown {
+  color: #F3B000;
+  width: 12.504px;
+  height: 8.074px;
+  transform: matrix(1,0,0,1,0,0);
+  margin:1em;
+}
+
+.img-notification {
+  margin-right:3em;
+  margin-top:0.5em;
+}
+
+.icon-menu {
+  padding-bottom:0;
+}
+
+/* ======== ツールバー ======== */
+
+.toolbar-himawari {
+  min-height: 50px;
+  color: white;
+  border-radius: 15px;
+}
+
+.vertical-divider {
+  display: inline-block;
+  min-height: 36px;
+  border-left: 1px solid #DBDAD5;
+}
+
+img.himawari-brand {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0;
+}
+
+.content-wrapper {
+  background-color: #F4F3EA;
+  color: #994E20;
+  padding:20px;
+  position:relative;
+ 
+}
+
+.content-wrapper > .content-header {
+  background-color: #f4eaea;
+  top:3rem;
+  padding: 1rem 0;
+  
+  
+}
+
+.content-wrapper > .content {
+  padding-top: 2.2rem;
+}
+
+.navbar {
+  box-shadow: none;
+  height: 55px;
+  
+   
+}
+
+
+.front {
+  position: sticky;
+  z-index:101;
+  overflow: visible;
+  width:100%;
+  
+}
+
+.date {
+  color:white;
+  font-size: 22px;
+  padding-top:0.5em;
+}
+
+/* ======== タイル表示 ======== */
+
+.content{
+  position: relative;
+}
+.himawari-card {
+  width: 238px;
+  border-radius: 8px;
+  border: 2px solid rgba(242,173,0,1);
+  margin-bottom:0.5rem;
+}
+
+.himawari-card-tile::before,
+.himawari-card-tile::after {
+  content: "";
+  display: block;
+  width: 238px;
+}
+
+.himawari-card-tile::before {
+  order: 1;
+}
+
+.card-corner{
+  position:absolute;
+  top:0;
+  right:0;
+  opacity: 0.25;
+}
+
+.select-border {
+  border: 2px solid rgba(242,173,0,1);
+  border-radius: 8px;
+}
+.select-corner {
+  opacity: 1.0;
+}
+
+.select-corner2{
+  opacity: 0.25;
+}
+
+
+/* ======== カードデザイン ======== */
+
+.patient-name {
+  font-size: 22px;
+  /*color: #4357C4;*/
+  color:#333333;
+}
+
+.patient-csid {
+  font-size: 14px;
+  color: #555555;
+}
+
+.patient-birthday {
+  font-size: 16px;
+  color: #333333;
+}
+
+.badge-himawari {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+.badge-weekday {
+  color: rgb(237,161,0);
+  background-color: white;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.badge-nintei {
+  color: #994E20;
+  background-color: #FFE472;
+}
+
+.badge-nintei-sien {
+  color: rgba(90,119,43,1);
+  background-color: rgba(197,229,132,1);
+}
+
+
+.oshirase {
+  color: #CE0F0F;
+}
+
+.badge-oshirase {
+  color: white;
+  background-color: #CE0F0F;
+}
+
+a {
+  color: #333333;
+}
+
+
+#pop_up {
+	text-align:start;
+	background:lightyellow;
+	padding: 50px 10px;
+	
+	width: 400px;
+	border: 2px solid  darkorange;
+	
+  color: black;
+  position:absolute;
+  z-index: 100;
+  transform: translateX(0px);
+  font-size: large;
+  height: 500px;
+  right:30%
+}
+
+.shosaikensaku{
+  text-align: center;
+}
+
+.shosaikensakubotan{
+  text-align: end;
+  transform: translateY(40px);
+}
+
+#shosaikensakubotan{
+  background-color:darkorange;
+}
+
+#pop_up1 {
+	text-align:start;
+	background:lightyellow;
+	padding: 50px 10px;
+	
+	width: 200px;
+	border: 2px solid  darkorange;
+	
+  color: black;
+  position:absolute;
+  z-index: 100;
+  transform: translateX(0px);
+  font-size: large;
+  height: 300px;
+  right:25%
+}
+
+.one {
+  position: relative;
+  display: block;
+  margin: 5px 0;
+  padding-left: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+ .one input {
+  display: none;
+}
+
+.two {
+  position: absolute;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  
+ 
+}
+
+.two:after {
+  content: "✓";
+  position: absolute;
+ 
+  
+  top: 2px;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  opacity: 1;
+}
+
+ 
+
+
+.three {
+  position: absolute;
+  right:0px;
+  height: 24px;
+  width: 24px;
+  
+ 
+}
+
+.three:after {
+  content: "∨";
+  position: absolute;
+ 
+  
+  top: 2px;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  opacity: 1;
+}
+
+
+
+.switch-input:checked+.three:after{
+  content: "∧";
+  
+}
+
+
+.switch-input:not(:checked)+.three:after{
+  content: "∨";
+  
+}
+
+#menu {
+  margin: 0;
+  position: absolute;
+  min-width: 200px;
+  padding: 2px;
+  line-height: 12pt;
+  color: #000;
+  background-color: #eeeeee;
+  border: 1pt solid #666666;
+  box-shadow: 2px 2px 4px 0px #666666;
+  font-size: 9pt;
+  visibility: hidden;
+}
+#menu a {
+  display: block;
+  padding: 2px 2px 2px 10px;
+  text-decoration: none;
+  color: #000;
+  cursor: default;
+}
+#menu li {
+  border: 1px solid transparent;
+  list-style: none;
+}
+#menu li:hover {
+  border: 1px solid #78aee5;
+  background-color: #d1e2f2;
+}

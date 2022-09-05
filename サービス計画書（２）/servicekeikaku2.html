@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>サービス計画書（２）</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+		integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdb-ui-kit@4.2.0/css/mdb.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/confetti.css">
+	<link rel="stylesheet" href="../common/himawari.css">
+  <link rel="stylesheet" href="../common/flatpickr.css">
+	<link rel="stylesheet" href="./servicekeikaku2.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdb-ui-kit@4.2.0/js/mdb.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+  <script src="../common/flatpickr.js"></script>
+</head>
+<body class="hold-transition sidebar-collapse layout-fixed layout-navbar-fixed">
+	<div class="wrapper">
+		<!--ヘッダ-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light front" style="position:fixed">
+      <div class="container-fluid">
+        
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+           
+           
+          </ul>
+          <div class="d-flex">
+            <div class = "img-notification">
+              <a href="">
+                <img src="../icons/bell.svg">
+                <span class="badge rounded-pill badge-notification bg-danger">1</span>
+              </a>
+            </div>
+            <div>
+              <div class="text-useroffice">Flowers NEXTひまわり</div>
+              <div class="text-username">鈴木 康平</div>
+            </div>
+            <div><i class="fa-solid fa-angle-down icon-dropdown"></i></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+		<!-- サイドメニュー -->
+    <div class="offcanvas offcanvas-start main-sidebar" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="left-nav" aria-labelledby="left-nav-label">
+      <div class="offcanvas-body sidebar">
+        <div class="menu">ホーム</div>
+        <div class="menu">各種設定</div>
+        <div class="menu">パスワード変更</div>
+        <div class="menu">ログアウト</div>
+        <hr class="hr">
+        <div class="menu">コンダクトホームページ</div>
+        <div class="menu">お問い合わせ</div>
+      </div>
+    </div>
+
+    <!--検索領域-->
+    <div class="content-wrapper">
+      <div id="Tab3" >
+      <div class="content-header front ps-0 pb-0 mb-0">
+        <nav class="navbar navbar-expand toolbar-himawari bg-himawari">
+          <div class="container-fluid">
+            <button type="button" class="btn btn-primary btn-back" onclick="location.href='../アセスメント/asesumento.html'">戻る</button>
+            <span class="riyousya">
+              秋田　次生<font style="font-size:18px; color: rgba(236,236,236,1); font-weight: normal;">　様</font>
+            </span>
+            
+            <span class="hennshutyu">
+              編集中
+            </span>
+            <button type="button" class="btn midori">
+              ◀　(1)へ
+            </button>
+            <span class="servicekeikakusho">
+                サービス計画書（２）
+            </span>
+            <div class="d-flex flex-row justify-content-end">
+              <div class="p-2">
+               
+                <button type="button" class="btn btn-primary btn-register" onclick="location.href='../アセスメント/asesumento.html'">登録</button>
+                
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="content">
+        <div class="d-flex">
+        <table>
+            <tr><th rowspan="2">生活全般の解決す<br>べき課題(ニーズ)</th><th colspan="2">目標</th><th colspan="6">援助内容</th></tr>
+            <tr><th>長期目標(期間)</th><th>短期目標(期間)</th><th>サービス内容</th><th>※１</th><th>サービス種別</th><th>※２(サービス提供事業所)</th><th>頻度</th><th>期間</th></tr>
+            <tr><td rowspan="3" id="button">自力でベッドから<br>起きて、家の中を<br>移動したい。</td>
+            <td rowspan="3" id="button">R4/7/15~R4/10/14<br>腰痛については今後、<br>劇的な改善は見込めな<br>いので、うまく痛みと<br>付き合いながら行動す<br>る術を身に着ける。</td>
+            <td id="button">R4/7/15~R4/9/14<br>ベッドからの起き上が<br>り動作</td><td id="button">リハビリテーション/<br>基本姿勢動作へのリハ<br>ビリテーション</td><td style="text-align: center">○</td>
+            <td id="button2">訪問リハビリテ<br>ーション</td><td id="button2">清瀬クリニック　訪問看護<br>ステーション</td><td id="button2">１回/日</td><td id="button2">R4/7/15~<br>R4/10/14</td></tr>
+            <tr><td id="button">R4/9/15~R4/10/14<br>ベッドからの起き上が<br>り動作</td><td id="button">リハビリテーション/<br>基本姿勢動作へのリハ<br>ビリテーション</td><td style="text-align: center">○</td>
+            <td id="button2">訪問リハビリテ<br>ーション</td><td id="button2">清瀬クリニック　訪問看護<br>ステーション</td><td id="button2">１回/日</td><td id="button2">R4/7/15~<br>R4/10/14</td></tr>
+            <tr><td id="button">R4/10/15~R5/1/14<br>ベッドから起きる、立<br>ち上がる~歩く~ベッ<br>ドに戻る動作</td><td id="button">リハビリテーション/<br>歩行・動作のリハビリ<br>テーション</td>
+            <td style="text-align: center">○</td><td id="button2">訪問リハビリテ<br>ーション</td><td id="button2">清瀬クリニック　訪問看護<br>ステーション</td><td id="button2">１回/日</td><td id="button2">R4/7/15~<br>R4/10/14</td></tr>
+        </table>
+        <div id="pop_up" style="display:none; ">
+         <div class="d-flex">
+       
+        <div class="flex-fill ">生活全般の解決すべ<br>き課題（ニーズ）<img  src="../icons/事例文アイコン.svg"><br>
+          <textarea name="zyuusho" cols="16" rows="5" maxlength="240"></textarea></div>
+        <div class="flex-fill ">長期目標<img  src="../icons/事例文アイコン.svg"><br><br>
+          <textarea name="zyuusho" cols="20" rows="5" maxlength="300"></textarea></div>
+        <div class="flex-fill">短期目標<img  src="../icons/事例文アイコン.svg"><br><br>
+          <textarea name="zyuusho" cols="20" rows="5" maxlength="300"></textarea>
+        </div> 
+        <div class="flex-fill ">サービス内容<img  src="../icons/事例文アイコン.svg"><br><br>
+          <textarea name="zyuusho" cols="20" rows="5" maxlength="300"></textarea>
+        </div>
+        <div  class="d-flex">
+          <div class="d-flex  align-items-end ">
+          <button type="button" class="btn btn-primary btn1">決定</button>
+          <button type="button" class="btn btn-primary btn2">キャンセル</button>
+        </div>
+        </div>
+        </div>
+         </div>
+         <div id="pop_up1" style="display:none;" >
+          <div class="d-flex justify-content-around">
+            <div class="d-flex ">
+              <div class="d-flex flex-column">
+                <div class="serviceshubetu ">※１/サービス種別/※２（サービス提供事業所）</div>
+                <div class="p-3">
+                  <input type="radio" name="service">サービス種別
+                  <input type="radio" name="service">その他サービス
+                  <input type="checkbox">給付対象
+                </div>
+                <div class="px-3">
+                  <input type="text" size="40">
+                </div>
+                <div class="p-3">
+                  事業者番号<input type="text" size="10">
+                </div>
+                <div class="px-3">
+                  <input type="checkbox">フリー入力する
+                </div>
+                <div class="d-flex flex-grow-1">
+                  <div class="px-3 pt-2">※1 <br>
+                    <select name="yousikiselect" class="yosikilong">
+                    <option hidden></option>
+                    <option value="yousiki1">様式1</option>
+                    <option value="yousiki2">様式2</option>
+                    <option value="yousiki3">様式3</option>
+                    <option value="yousiki4">様式4</option>
+                    <option value="yousiki5">様式5</option>
+                    <option value="yousiki6">様式6</option>
+                    <option value="yousiki7">様式7</option>
+                    </select>
+                  </div>
+                  <div class="px-3 pt-2">
+                    サービス種<br>
+                    <textarea  cols="14" rows="3" maxlength="70"></textarea>
+                  </div>
+                  <div class="px-3 pt-2">
+                    ※2（サービス提供事業所）<br>
+                    <textarea  cols="14" rows="3" maxlength="70"></textarea>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            
+             
+              <div class="d-flex flex-column">
+                <div style="text-align:center ;">頻度</div>
+                <div class="p-3">
+                  <select name="hindo" class="hindo">
+                    <option hidden></option>
+                    <option value="yousiki1">1111111</option>
+                    <option value="yousiki2">2222222</option>
+                    <option value="yousiki3">3333333</option>
+                    <option value="yousiki4">4444444</option>
+                    <option value="yousiki5">5555555</option>
+                    <option value="yousiki6">6666666</option>
+                    <option value="yousiki7">7777777</option>
+                    </select>
+                    <input type="text" size="2">回
+                </div>
+                <div class="px-3">
+                  <input type="checkbox">フリー入力する
+                </div>
+                <div class="p-3">
+                  <textarea  cols="8" rows="3" maxlength="40"></textarea>
+                </div>
+                
+              </div>
+              
+            
+            
+            
+              <div class="d-flex flex-column">
+                <div style="text-align:center ;">期間</div>
+                <div class="p-3">
+                  <input type="checkbox">フリー入力する
+                </div>
+                <div>
+                 
+                  
+                    開始<span class="px-3"><input type="date"></span><br>
+                    
+                 
+                </div>
+                <div class="px-5 py-3 datedate"><input type="date"></div>
+                <div class="px-5">
+                  <button type="button" class="btn  toitu">統一する</button>
+                </div>
+                
+              </div>
+              
+            </div>
+          
+         
+            <div id="btnbtn">
+              <button type="button" class="btn btn-primary btn1">決定</button>
+              <button type="button" class="btn btn-primary btn2">キャンセル</button>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+          </div>   
+      </div>
+    </div>
+  
+  <script src="../common/application.js"></script>
+  <script src="./kaigosienkeika-edit.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+  <script src="../common/flatpickr.js"></script>
+  <script src="./servicekeikaku2.js"></script>
+</body>
+</html>

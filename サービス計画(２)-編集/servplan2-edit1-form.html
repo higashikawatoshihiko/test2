@@ -1,0 +1,2062 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サービス計画書（２）-編集</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdb-ui-kit@4.2.0/css/mdb.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/confetti.css">
+  <link rel="stylesheet" href="../common/application.css">
+  <link rel="stylesheet" href="../common/flatpickr.css">
+  <link rel="stylesheet" href="../common/himawari.css">
+  <link rel="stylesheet" href="himawari-colors.css">
+  <link rel="stylesheet" href="himawari-buttons.css">
+  <link rel="stylesheet" href="common-frame.css">
+  <link rel="stylesheet" href="servplan2-edit.css">
+</head>
+
+<body class="hold-transition sidebar-collapse layout-fixed layout-navbar-fixed">
+  <div class="wrapper">
+    <!--ヘッダ-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light front" style="position:fixed">
+      <div class="container-fluid">
+
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+
+
+          </ul>
+          <div class="d-flex">
+            <div class="img-notification">
+              <a href="">
+                <img src="../icons/bell.svg">
+                <span class="badge rounded-pill badge-notification bg-danger">1</span>
+              </a>
+            </div>
+            <div>
+              <div class="text-useroffice">Flowers NEXTひまわり</div>
+              <div class="text-username">鈴木 康平</div>
+            </div>
+            <div><i class="fa-solid fa-angle-down icon-dropdown"></i></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- サイドメニュー -->
+    <div class="offcanvas offcanvas-start main-sidebar" data-mdb-scroll="true" data-mdb-backdrop="true" tabindex="-1" id="left-nav" aria-labelledby="left-nav-label">
+      <div class="offcanvas-body sidebar">
+        <div class="menu">ホーム</div>
+        <div class="menu">各種設定</div>
+        <div class="menu">パスワード変更</div>
+        <div class="menu">ログアウト</div>
+        <hr class="hr">
+        <div class="menu">コンダクトホームページ</div>
+        <div class="menu">お問い合わせ</div>
+      </div>
+    </div>
+
+    <!--検索領域-->
+    <div class="content-wrapper">
+      <div class="content-header front ps-0 pb-0 mb-0">
+        <nav class="navbar navbar-expand toolbar-himawari bg-himawari">
+          <div class="container-fluid">
+            <div class="d-flex flex-row align-items-center">
+              <a class="btn btn-himawari-gray" href="../サービス計画(１)(２)/serviceplan.html">戻る</a>
+              <div>
+                <span class="riyousya">
+                  秋田　次生<font style="font-size:18px; color: rgba(236,236,236,1); font-weight: normal;">　様</font>
+                </span>
+                <span class="page-mode">編集中</span>
+                <a  class="btn btn-himawari-green-light text-himawari-black" href="#">◀ (1)へ</a>
+                <span class="page-title">サービス計画書（２）</span>
+              </div>
+            </div>
+            <div>
+              <a class="btn btn-himawari-blue" href="../サービス計画(１)(２)/serviceplan.html">登録</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- メインコンテンツ -->
+      <div class="main-content">
+        <table class="table table-slim table-bordered">
+          <colgroup>
+            <col width="12%">
+            <col width="15%">
+            <col width="15%">
+            <col width="15%">
+            <col width="1%">
+            <col width="8%">
+            <col width="16%">
+            <col width="6%">
+            <col width="12%">
+          </colgroup>
+          <thead class="align-top text-center">
+            <tr>
+              <th rowspan="2">生活全般の解決すべき課題 (ニーズ)</th>
+              <th colspan="2">目標</th>
+              <th colspan="6">援助内容</th>
+            </tr>
+            <tr>
+              <th>長期目標</th>
+              <th>短期目標</th>
+              <th>サービス内容</th>
+              <th><span class="tooltip-hint" data-mdb-toggle="tooltip" data-mdb-placement="top" title="「保険給付の対象となるかどうかの区分」について、保険給付対象内サービスについては〇印を付す。">※1</span></th>
+              <th>サービス種別</th>
+              <th><span class="tooltip-hint" data-mdb-toggle="tooltip" data-mdb-placement="top" title="「当該サービス提供を行う事業所」について記入する。">※2(サービス提供事業所)</span></th>
+              <th>頻度</th>
+              <th>期間</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white">
+            <tr class="row-template">
+              <td class="cell-needs">
+                <!-- textarea -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-8ic" rows="3"></textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#case-text-modal" data-mdb-whatever="01">例文</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-up"><i class="bi-chevron-up"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-down"><i class="bi-chevron-down"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-delete"><i class="bi-trash"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-add"><i class="bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="cell-long">
+                <!-- date-span -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkLong">
+                        <input class="form-check-input" type="checkbox" name="chkLong" id="chkLong">期間フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtLongStart">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-control-plaintext">～</div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtLongEnd">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-10ic" rows="3" name="areaLong">半年</textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" name="btnAllLong">統一</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- textarea -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-10ic" rows="3"></textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#case-text-modal" data-mdb-whatever="02">例文</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-up"><i class="bi-chevron-up"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-down"><i class="bi-chevron-down"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-delete"><i class="bi-trash"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-add"><i class="bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="cell-short">
+                <!-- date-span -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkShort">
+                        <input class="form-check-input" type="checkbox" name="chkShort" id="chkShort">期間フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtShortStart">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-control-plaintext">～</div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtShortEnd">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-10ic" rows="3" name="areaShort"></textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" name="btnAllShort">統一</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- textarea -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-10ic" rows="3"></textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#case-text-modal" data-mdb-whatever="03">例文</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-up"><i class="bi-chevron-up"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-down"><i class="bi-chevron-down"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-delete"><i class="bi-trash"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-add"><i class="bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="cell-service">
+                <!-- textarea -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-10ic" rows="3"></textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#case-text-modal" data-mdb-whatever="04">例文</button>
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#service-modal">サービス</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-up"><i class="bi-chevron-up"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-down"><i class="bi-chevron-down"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-delete"><i class="bi-trash"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-add"><i class="bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="cell-service-type">
+                <!-- checkbox -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="inlineFormCheck" >
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="cell-service-type">
+                <!-- radio & select -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkService">
+                        <input class="form-check-input" type="checkbox" name="chkService" id="chkService">フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#service-provider-modal">サービス提供者</button>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="inlineFormRadio" id="inlineFormRadio1">
+                      <label class="form-check-label" for="inlineFormRadio1">サービス種別</label>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="inlineFormRadio" id="inlineFormRadio2">
+                      <label class="form-check-label" for="inlineFormRadio2">その他サービス</label>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <select class="form-select form-select-sm">
+                      <option></option>
+                      <option>訪問介護</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-7ic" rows="3"></textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-up"><i class="bi-chevron-up"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-down"><i class="bi-chevron-down"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-delete"><i class="bi-trash"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-add"><i class="bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="row g-1 mb-1" name="divNotFree2">
+                  <div class="col-auto">
+                    <input type="text" class="form-control form-control-sm font-monospace" name="txtJigyosyo" value="" readonly>
+                  </div>
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#office-modal">社会資源から選択</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- textarea -->
+                <div class="row g-1 mb-1" name="divFree2">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-12ic" rows="3"></textarea>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <!-- cycle -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkHindo">
+                        <input class="form-check-input" type="checkbox" name="chkHindo" id="chkHindo">フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <select class="form-select form-select-sm">
+                      <option></option>
+                      <option>回/日</option>
+                      <option>回/週</option>
+                      <option>回/月</option>
+                      <option>回/３ヶ月</option>
+                      <option>回/半年</option>
+                      <option>随時</option>
+                      <option>毎日</option>
+                    </select>
+                  </div>
+                  <div class="col-auto">
+                    <input type="text" class="form-control form-control-sm text-end" size="2">
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-control-plaintext">回</div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-4ic" rows="3"></textarea>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <!-- date-span -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkTerm">
+                        <input class="form-check-input" type="checkbox" name="chkTerm" id="chkTerm">期間フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtTermStart">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-control-plaintext">～</div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtTermEnd">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-5ic" rows="3" name="areaTerm"></textarea>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" name="btnAllTerm">統一</button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="row-needs">
+              <td class="cell-needs" rowspan="6">
+                <!-- textarea -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-8ic" rows="3">できるだけ身体的苦痛を抑えたい</textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#case-text-modal" data-mdb-whatever="01">例文</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-up"><i class="bi-chevron-up"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-down"><i class="bi-chevron-down"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-delete"><i class="bi-trash"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-add"><i class="bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="cell-long" rowspan="4">
+                <!-- date-span -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkLong1">
+                        <input class="form-check-input" type="checkbox" name="chkLong" id="chkLong1">期間フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtLongStart">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-control-plaintext">～</div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtLongEnd">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-10ic" rows="3" name="areaLong">半年</textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" name="btnAllLong">統一</button>
+                    </div>
+                  </div>
+                </div>                <!-- textarea -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-10ic" rows="3">健康状態が良好に保たれる</textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#case-text-modal" data-mdb-whatever="02">例文</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-up"><i class="bi-chevron-up"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-down"><i class="bi-chevron-down"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-delete"><i class="bi-trash"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-add"><i class="bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="cell-short" rowspan="3">
+                <!-- date-span -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkShort1">
+                        <input class="form-check-input" type="checkbox" name="chkShort" id="chkShort1">期間フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtShortStart">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-control-plaintext">～</div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtShortEnd">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-10ic" rows="3" name="areaShort"></textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" name="btnAllShort">統一</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- textarea -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-10ic" rows="3">介護者が休養をとれるようにする</textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#case-text-modal" data-mdb-whatever="03">例文</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-up"><i class="bi-chevron-up"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-down"><i class="bi-chevron-down"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-delete"><i class="bi-trash"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-add"><i class="bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="cell-service">
+                <!-- textarea -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-10ic" rows="3">移動／歩行介助</textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#case-text-modal" data-mdb-whatever="04">例文</button>
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#service-modal">サービス</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-up"><i class="bi-chevron-up"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-down"><i class="bi-chevron-down"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-delete"><i class="bi-trash"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-add"><i class="bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="cell-service-type">
+                <!-- checkbox -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="inlineFormCheck" >
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="cell-service-type">
+                <!-- radio & select -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkService1">
+                        <input class="form-check-input" type="checkbox" name="chkService" id="chkService1">フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#service-provider-modal">サービス提供者</button>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="inlineFormRadio" id="inlineFormRadio1">
+                      <label class="form-check-label" for="inlineFormRadio1">サービス種別</label>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="inlineFormRadio" id="inlineFormRadio2">
+                      <label class="form-check-label" for="inlineFormRadio2">その他サービス</label>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <select class="form-select form-select-sm">
+                      <option></option>
+                      <option selected>訪問介護</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-7ic" rows="3"></textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-up"><i class="bi-chevron-up"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-down"><i class="bi-chevron-down"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-delete"><i class="bi-trash"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-add"><i class="bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="row g-1 mb-1" name="divNotFree2">
+                  <div class="col-auto">
+                    <input type="text" class="form-control form-control-sm font-monospace" name="txtJigyosyo" value="" readonly>
+                  </div>
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#office-modal">社会資源から選択</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- textarea -->
+                <div class="row g-1 mb-1" name="divFree2">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-12ic" rows="3">コンダクト事業所</textarea>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <!-- cycle -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkHindo1">
+                        <input class="form-check-input" type="checkbox" name="chkHindo" id="chkHindo1">フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <select class="form-select form-select-sm">
+                      <option></option>
+                      <option>回/日</option>
+                      <option selected>回/週</option>
+                      <option>回/月</option>
+                      <option>回/３ヶ月</option>
+                      <option>回/半年</option>
+                      <option>随時</option>
+                      <option>毎日</option>
+                    </select>
+                  </div>
+                  <div class="col-auto">
+                    <input type="text" class="form-control form-control-sm text-end" size="2" value="2">
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-control-plaintext">回</div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-4ic" rows="3"></textarea>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <!-- date-span -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkTerm1">
+                        <input class="form-check-input" type="checkbox" name="chkTerm" id="chkTerm1">期間フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtTermStart">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-control-plaintext">～</div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtTermEnd">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-5ic" rows="3" name="areaTerm"></textarea>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" name="btnAllTerm">統一</button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="row-service">
+              <td class="cell-service">
+                <!-- textarea -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-10ic" rows="3">医療行為／人工呼吸器の管理・指導・点滴の実施</textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#case-text-modal" data-mdb-whatever="04">例文</button>
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#service-modal">サービス</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-up"><i class="bi-chevron-up"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-down"><i class="bi-chevron-down"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-delete"><i class="bi-trash"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-add"><i class="bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="cell-service-type">
+                <!-- checkbox -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="inlineFormCheck" >
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="cell-service-type">
+                <!-- radio & select -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkService2">
+                        <input class="form-check-input" type="checkbox" name="chkService" id="chkService2">フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#service-provider-modal">サービス提供者</button>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="inlineFormRadio" id="inlineFormRadio1">
+                      <label class="form-check-label" for="inlineFormRadio1">サービス種別</label>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="inlineFormRadio" id="inlineFormRadio2">
+                      <label class="form-check-label" for="inlineFormRadio2">その他サービス</label>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <select class="form-select form-select-sm">
+                      <option></option>
+                      <option>訪問介護</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-7ic" rows="3">1か月</textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-up"><i class="bi-chevron-up"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-down"><i class="bi-chevron-down"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-delete"><i class="bi-trash"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-add"><i class="bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="row g-1 mb-1" name="divNotFree2">
+                  <div class="col-auto">
+                    <input type="text" class="form-control form-control-sm font-monospace" name="txtJigyosyo" value="" readonly>
+                  </div>
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#office-modal">社会資源から選択</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- textarea -->
+                <div class="row g-1 mb-1" name="divFree2">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-12ic" rows="3">訪問介護ステーション</textarea>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <!-- cycle -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkHindo2">
+                        <input class="form-check-input" type="checkbox" name="chkHindo" id="chkHindo2">フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <select class="form-select form-select-sm">
+                      <option></option>
+                      <option>回/日</option>
+                      <option selected>回/週</option>
+                      <option>回/月</option>
+                      <option>回/３ヶ月</option>
+                      <option>回/半年</option>
+                      <option>随時</option>
+                      <option>毎日</option>
+                    </select>
+                  </div>
+                  <div class="col-auto">
+                    <input type="text" class="form-control form-control-sm text-end" size="2" value="3">
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-control-plaintext">回</div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-4ic" rows="3"></textarea>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <!-- date-span -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkTerm2">
+                        <input class="form-check-input" type="checkbox" name="chkTerm" id="chkTerm2">期間フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtTermStart">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-control-plaintext">～</div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtTermEnd">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-5ic" rows="3" name="areaTerm"></textarea>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" name="btnAllTerm">統一</button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="row-service">
+              <td class="cell-service">
+                <!-- textarea -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-10ic" rows="3">食事／食事の介助</textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#case-text-modal" data-mdb-whatever="04">例文</button>
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#service-modal">サービス</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-up"><i class="bi-chevron-up"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-down"><i class="bi-chevron-down"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-delete"><i class="bi-trash"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-add"><i class="bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="cell-service-type">
+                <!-- checkbox -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="inlineFormCheck" >
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="cell-service-type">
+                <!-- radio & select -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkService3">
+                        <input class="form-check-input" type="checkbox" name="chkService" id="chkService3">フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#service-provider-modal">サービス提供者</button>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="inlineFormRadio" id="inlineFormRadio1">
+                      <label class="form-check-label" for="inlineFormRadio1">サービス種別</label>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="inlineFormRadio" id="inlineFormRadio2">
+                      <label class="form-check-label" for="inlineFormRadio2">その他サービス</label>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <select class="form-select form-select-sm">
+                      <option></option>
+                      <option selected>訪問介護</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-7ic" rows="3"></textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-up"><i class="bi-chevron-up"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-down"><i class="bi-chevron-down"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-delete"><i class="bi-trash"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-add"><i class="bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="row g-1 mb-1" name="divNotFree2">
+                  <div class="col-auto">
+                    <input type="text" class="form-control form-control-sm font-monospace" name="txtJigyosyo" value="" readonly>
+                  </div>
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#office-modal">社会資源から選択</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- textarea -->
+                <div class="row g-1 mb-1" name="divFree2">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-12ic" rows="3">ヘルパーさん</textarea>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <!-- cycle -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkHindo3">
+                        <input class="form-check-input" type="checkbox" name="chkHindo" id="chkHindo3">フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <select class="form-select form-select-sm">
+                      <option></option>
+                      <option>回/日</option>
+                      <option>回/週</option>
+                      <option selected>回/月</option>
+                      <option>回/３ヶ月</option>
+                      <option>回/半年</option>
+                      <option>随時</option>
+                      <option>毎日</option>
+                    </select>
+                  </div>
+                  <div class="col-auto">
+                    <input type="text" class="form-control form-control-sm text-end" size="2" value="1">
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-control-plaintext">回</div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-4ic" rows="3"></textarea>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <!-- date-span -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkTerm3">
+                        <input class="form-check-input" type="checkbox" name="chkTerm" id="chkTerm3">期間フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm" >
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtTermStart">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-control-plaintext">～</div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtTermEnd">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-5ic" rows="3" name="areaTerm"></textarea>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" name="btnAllTerm">統一</button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="row-short">
+              <td class="cell-short">
+                <!-- date-span -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkShort2">
+                        <input class="form-check-input" type="checkbox" name="chkShort" id="chkShort2">期間フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtShortStart">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-control-plaintext">～</div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtShortEnd">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-10ic" rows="3" name="areaShort"></textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" name="btnAllShort">統一</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- textarea -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-10ic" rows="3">症状が悪化しないようにする</textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#case-text-modal" data-mdb-whatever="03">例文</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-up"><i class="bi-chevron-up"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-down"><i class="bi-chevron-down"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-delete"><i class="bi-trash"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-add"><i class="bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="cell-service">
+                <!-- textarea -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-10ic" rows="3">あやめ分類／あやめ項目</textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#case-text-modal" data-mdb-whatever="04">例文</button>
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#service-modal">サービス</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-up"><i class="bi-chevron-up"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-down"><i class="bi-chevron-down"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-delete"><i class="bi-trash"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-add"><i class="bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="cell-service-type">
+                <!-- checkbox -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="inlineFormCheck" >
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="cell-service-type">
+                <!-- radio & select -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkService4">
+                        <input class="form-check-input" type="checkbox" name="chkService" id="chkService4">フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#service-provider-modal">サービス提供者</button>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="inlineFormRadio" id="inlineFormRadio1">
+                      <label class="form-check-label" for="inlineFormRadio1">サービス種別</label>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="inlineFormRadio" id="inlineFormRadio2">
+                      <label class="form-check-label" for="inlineFormRadio2">その他サービス</label>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <select class="form-select form-select-sm">
+                      <option></option>
+                      <option selected>通所リハビリテーション</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-7ic" rows="3"></textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-up"><i class="bi-chevron-up"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-down"><i class="bi-chevron-down"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-delete"><i class="bi-trash"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-add"><i class="bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="row g-1 mb-1" name="divNotFree2">
+                  <div class="col-auto">
+                    <input type="text" class="form-control form-control-sm font-monospace" name="txtJigyosyo" value="" readonly>
+                  </div>
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#office-modal">社会資源から選択</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- textarea -->
+                <div class="row g-1 mb-1" name="divFree2">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-12ic" rows="3">たんぽぽ事業所</textarea>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <!-- cycle -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkHindo4">
+                        <input class="form-check-input" type="checkbox" name="chkHindo" id="chkHindo4">フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <select class="form-select form-select-sm">
+                      <option></option>
+                      <option>回/日</option>
+                      <option>回/週</option>
+                      <option>回/月</option>
+                      <option>回/３ヶ月</option>
+                      <option>回/半年</option>
+                      <option>随時</option>
+                      <option>毎日</option>
+                    </select>
+                  </div>
+                  <div class="col-auto">
+                    <input type="text" class="form-control form-control-sm text-end" size="2" value="">
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-control-plaintext">回</div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-4ic" rows="3"></textarea>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <!-- date-span -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkTerm4">
+                        <input class="form-check-input" type="checkbox" name="chkTerm" id="chkTerm4">期間フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtTermStart">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-control-plaintext">～</div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtTermEnd">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-5ic" rows="3" name="areaTerm"></textarea>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" name="btnAllTerm">統一</button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="row-long">
+              <td class="cell-long" rowspan="2">
+                <!-- date-span -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkLong2">
+                        <input class="form-check-input" type="checkbox" name="chkLong" id="chkLong2">期間フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtLongStart">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-control-plaintext">～</div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtLongEnd">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-10ic" rows="3" name="areaLong"></textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" name="btnAllLong">統一</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- textarea -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-10ic" rows="3">健康管理を正しく行い、病状が安定して生活できるようになる</textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#case-text-modal" data-mdb-whatever="02">例文</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-up"><i class="bi-chevron-up"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-down"><i class="bi-chevron-down"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-delete"><i class="bi-trash"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-add"><i class="bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="cell-short" rowspan="2">
+                <!-- date-span -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkShort3">
+                        <input class="form-check-input" type="checkbox" name="chkShort" id="chkShort3">期間フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtShortStart">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-control-plaintext">～</div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtShortEnd">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-10ic" rows="3" name="areaShort"></textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" name="btnAllShort">統一</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- textarea -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-10ic" rows="3">安全な療養環境をつくり、怪我や事故などのない生活を送ることができる</textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#case-text-modal" data-mdb-whatever="03">例文</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-up"><i class="bi-chevron-up"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-down"><i class="bi-chevron-down"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-delete"><i class="bi-trash"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-add"><i class="bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="cell-service">
+                <!-- textarea -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-10ic" rows="3">看護／バイタルチェックと病状の観察・歩行介助・コミュニケーションの援助</textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#case-text-modal" data-mdb-whatever="04">例文</button>
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#service-modal">サービス</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-up"><i class="bi-chevron-up"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-down"><i class="bi-chevron-down"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-delete"><i class="bi-trash"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-add"><i class="bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="cell-service-type">
+                <!-- checkbox -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="inlineFormCheck" >
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="cell-service-type">
+                <!-- radio & select -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkService5">
+                        <input class="form-check-input" type="checkbox" name="chkService" id="chkService5">フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#service-provider-modal">サービス提供者</button>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="inlineFormRadio" id="inlineFormRadio1">
+                      <label class="form-check-label" for="inlineFormRadio1">サービス種別</label>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="inlineFormRadio" id="inlineFormRadio2">
+                      <label class="form-check-label" for="inlineFormRadio2">その他サービス</label>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <select class="form-select form-select-sm">
+                      <option></option>
+                      <option selected>訪問介護</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-7ic" rows="3"></textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-up"><i class="bi-chevron-up"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-down"><i class="bi-chevron-down"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-delete"><i class="bi-trash"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-add"><i class="bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="row g-1 mb-1" name="divNotFree2">
+                  <div class="col-auto">
+                    <input type="text" class="form-control form-control-sm font-monospace" name="txtJigyosyo" value="" readonly>
+                  </div>
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#office-modal">社会資源から選択</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- textarea -->
+                <div class="row g-1 mb-1" name="divFree2">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-12ic" rows="3">ナースさん</textarea>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <!-- cycle -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkHindo5">
+                        <input class="form-check-input" type="checkbox" name="chkHindo" id="chkHindo5">フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <select class="form-select form-select-sm">
+                      <option></option>
+                      <option>回/日</option>
+                      <option>回/週</option>
+                      <option>回/月</option>
+                      <option selected>回/３ヶ月</option>
+                      <option>回/半年</option>
+                      <option>随時</option>
+                      <option>毎日</option>
+                    </select>
+                  </div>
+                  <div class="col-auto">
+                    <input type="text" class="form-control form-control-sm text-end" size="2" value="1">
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-control-plaintext">回</div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-4ic" rows="3"></textarea>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <!-- date-span -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkTerm5">
+                        <input class="form-check-input" type="checkbox" name="chkTerm" id="chkTerm5">期間フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtTermStart">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-control-plaintext">～</div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtTermEnd">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-5ic" rows="3" name="areaTerm"></textarea>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" name="btnAllTerm">統一</button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="row-service">
+              <td class="cell-service">
+                <!-- textarea -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-10ic" rows="3">福祉用具の提供／車椅子・移動用具の貸与</textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#case-text-modal" data-mdb-whatever="04">例文</button>
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#service-modal">サービス</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-up"><i class="bi-chevron-up"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-down"><i class="bi-chevron-down"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-delete"><i class="bi-trash"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-add"><i class="bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="cell-service-type">
+                <!-- checkbox -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="inlineFormCheck" >
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td class="cell-service-type">
+                <!-- radio & select -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkService6">
+                        <input class="form-check-input" type="checkbox" name="chkService" id="chkService6">フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#service-provider-modal">サービス提供者</button>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="inlineFormRadio" id="inlineFormRadio1">
+                      <label class="form-check-label" for="inlineFormRadio1">サービス種別</label>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="inlineFormRadio" id="inlineFormRadio2">
+                      <label class="form-check-label" for="inlineFormRadio2">その他サービス</label>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <select class="form-select form-select-sm">
+                      <option></option>
+                      <option selected>福祉用具貸与</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-7ic" rows="3"></textarea>
+                  </div>
+                </div>
+                <!-- actions -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-up"><i class="bi-chevron-up"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-move-down"><i class="bi-chevron-down"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-delete"><i class="bi-trash"></i></button>
+                      <button type="button" class="btn btn-outline-himawari-orange btn-row-add"><i class="bi-plus"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="row g-1 mb-1" name="divNotFree2">
+                  <div class="col-auto">
+                    <input type="text" class="form-control form-control-sm font-monospace" name="txtJigyosyo" value="" readonly>
+                  </div>
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-mdb-toggle="modal" data-mdb-target="#office-modal">社会資源から選択</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- textarea -->
+                <div class="row g-1 mb-1" name="divFree2">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-12ic" rows="3">事業所１２３</textarea>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <!-- cycle -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkHindo6">
+                        <input class="form-check-input" type="checkbox" name="chkHindo" id="chkHindo6">フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <select class="form-select form-select-sm">
+                      <option></option>
+                      <option>回/日</option>
+                      <option>回/週</option>
+                      <option>回/月</option>
+                      <option>回/３ヶ月</option>
+                      <option>回/半年</option>
+                      <option>随時</option>
+                      <option selected>毎日</option>
+                    </select>
+                  </div>
+                  <div class="col-auto">
+                    <input type="text" class="form-control form-control-sm text-end" size="2" value="">
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-control-plaintext">回</div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-4ic" rows="3"></textarea>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <!-- date-span -->
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label" for="chkTerm6">
+                        <input class="form-check-input" type="checkbox" name="chkTerm" id="chkTerm6">期間フリー入力
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divNotFree">
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtTermStart">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-control-plaintext">～</div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="input-group input-group-sm date">
+                      <input type="text" class="form-control" size="10" data-input value="yyyy/mm/dd" name="txtTermEnd">
+                      <button type="button" class="btn btn-outline-himawari-orange" data-toggle><i class="bi-calendar"></i></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1" name="divFree">
+                  <div class="col-auto">
+                    <textarea class="form-control form-control-sm auto-height font-monospace w-5ic" rows="3" name="areaTerm"></textarea>
+                  </div>
+                </div>
+                <div class="row g-1 mb-1">
+                  <div class="col-auto">
+                    <div class="btn-group btn-group-sm">
+                      <button type="button" class="btn btn-outline-himawari-orange" name="btnAllTerm">統一</button>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- 事例文選択ダイアログ -->
+  <div class="modal fade" id="case-text-modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">事例文の選択</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- サービス選択ダイアログ -->
+  <div class="modal fade" id="service-modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">サービスの選択</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- サービス提供者選択ダイアログ -->
+  <div class="modal fade" id="service-provider-modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">サービス提供者の選択</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 事業所選択ダイアログ -->
+  <div class="modal fade" id="office-modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">サービス提供者の選択</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 削除確認ダイアログ -->
+  <div class="modal fade" id="confirm-delete" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">削除</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>選択した行を削除します。<br>よろしいですか？</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-mdb-dismiss="modal" data-modal-result="yes">はい</button>
+          <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">いいえ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdb-ui-kit@4.2.0/js/mdb.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+  <script src="../common/application.js"></script>
+  <script src="../common/flatpickr.js"></script>
+  <script src="servplan2-edit1.js"></script>
+  <script src="servplan2-edit1-form.js"></script>
+</body>
+
+</html>

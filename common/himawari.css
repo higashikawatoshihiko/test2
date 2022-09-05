@@ -1,0 +1,129 @@
+/* ======== 全体 ======== */
+
+/* デフォルトフォント */
+body {
+  font-family:
+    "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN",
+    "Yu Gothic",
+    YuGothic,
+    Meiryo,
+    sans-serif;
+}
+
+/* 欧文フォント */
+.text-latin {
+  font-family:
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN",
+    "Yu Gothic",
+    YuGothic,
+    Meiryo,
+    sans-serif;
+}
+
+/* デフォルト背景色 */
+/*.wrapper, .content-wrapper { */
+body {
+  background-color: rgb(244,243,234);
+}
+
+/* ======== 背景色 ======== */
+
+.bg-himawari {
+  background: linear-gradient(#f3b000, #eda100);
+}
+
+/* ======== ボタン ======== */
+.btn {
+  font-size:inherit;
+}
+
+/* btn-light カスタマイズ */
+.himawari-theme.btn-light {
+  color: rgb(153,78,32);
+  background-color: white;
+  border-color: white;
+}
+
+.himawari-theme.btn-light:hover,
+.himawari-theme.btn-light:focus,
+.himawari-theme.btn-light.focus {
+  background-color: rgb(255,239,146);
+}
+
+.himawari-theme.btn-light:not(:disabled):not(.disabled):active,
+.himawari-theme.btn-light:not(:disabled):not(.disabled).active,
+.show > .himawari-theme.btn-light.dropdown-toggle {
+  color: rgb(153,78,32);
+  background-color: rgb(255,233,110);
+  border-color: white;
+}
+
+/* btn-outline-warning カスタマイズ */
+.himawari-theme.btn-outline-warning {
+  color: rgb(237,161,0);
+  border-color: rgb(237,161,0);
+}
+
+.himawari-theme.btn-outline-warning:hover {
+  background-color: rgb(255,239,146);
+}
+
+.himawari-theme.btn-outline-warning:not(:disabled):not(.disabled):active,
+.himawari-theme.btn-outline-warning:not(:disabled):not(.disabled).active,
+.show > .himawari-theme.btn-outline-warning.dropdown-toggle {
+  color: rgb(237,161,0);
+  background-color: rgb(255,233,110);
+}
+
+/* ======== フォームコントロール ======== */
+
+.himawari-theme.form-control,
+.himawari-theme.form-select {
+  color: rgb(153,78,32);
+  background-color: white;
+  border-color: white;
+}
+
+.himawari-theme.form-select {
+  padding: 0.6rem 1rem 0.4rem;
+}
+
+.himawari-theme.form-control:focus,
+.himawari-theme.form-select:focus {
+  color: rgb(153,78,32);
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+  opacity: 65%;
+}
+
+/* ======== サイドバー ======== */
+.main-sidebar {
+  background-color: #eda100;
+  padding:15px 10px;
+  width:300px;
+}
+
+.main-sidebar > .sidebar > .menu {
+  color:white;
+  font-size:16px;
+  margin: 1em;
+}
+
+.main-sidebar > .sidebar > .hr {
+  /*background-color:rgba(242,224,184,0.25);*/
+  background-color:rgba(255,255,255,0.5);
+  height:1px;
+  width:100%;
+}
+
+.layout-navbar-fixed.layout-fixed .wrapper .sidebar {
+  margin-top: 0;
+}
+

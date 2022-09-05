@@ -1,0 +1,26 @@
+.main-content {
+  color: #333;
+  background-color: #fff8d9;
+  width: 97%;
+  margin-top: 2rem;
+  padding: var(--mdb-gutter-y, 0.75rem) var(--mdb-gutter-x, 0.75rem);
+}
+
+.badge-gray {
+  background-color: gray;
+  color: white;
+}
+
+#delete-confirm-modal .modal-body {
+  background-color: #fff8d9;
+}
+
+.preview-area {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.preview-area > .preview {
+  max-width: 100%;
+  max-height: 100%;
+}
