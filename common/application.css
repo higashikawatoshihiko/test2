@@ -1,0 +1,172 @@
+/* for navbar fixed-top */
+.pt-navbar-fixed {
+  padding-top: 3.5rem;
+}
+
+/* disable table highlight border */
+.table > :not(:first-child) {
+  border-top-color: inherit;
+  border-top-width: inherit;
+}
+
+/* tooltip hint */
+.tooltip-hint {
+  border-bottom: 1px dashed var(--bs-body-color);
+  cursor: help;
+}
+
+/* auto resize textarea */
+textarea.auto-height {
+  overflow-y: hidden;
+}
+
+/* for custom control width */
+.form-control,
+.form-spacer {
+  --input-padding-y: 0.375rem;
+  --input-padding-x: 0.75rem;
+}
+
+.form-control.form-control-sm,
+.form-spacer.form-spacer-sm {
+  --input-padding-y: 0.25rem;
+  --input-padding-x: 0.5rem;
+}
+
+/* custom control width */
+.form-control.w-1ic {
+  width: calc(2ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-2ic {
+  width: calc(4ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-3ic {
+  width: calc(6ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-4ic {
+  width: calc(8ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-5ic {
+  width: calc(10ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-6ic {
+  width: calc(12ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-7ic {
+  width: calc(14ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-8ic {
+  width: calc(16ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-9ic {
+  width: calc(18ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-10ic {
+  width: calc(20ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-11ic {
+  width: calc(22ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-12ic {
+  width: calc(24ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-14ic {
+  width: calc(28ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-15ic {
+  width: calc(30ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-16ic {
+  width: calc(32ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-20ic {
+  width: calc(40ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-21ic {
+  width: calc(42ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-23ic {
+  width: calc(46ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-25ic {
+  width: calc(50ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-27ic {
+  width: calc(54ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-28ic {
+  width: calc(56ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-29ic {
+  width: calc(58ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-30ic {
+  width: calc(60ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-36ic {
+  width: calc(72ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-38ic {
+  width: calc(76ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-39ic {
+  width: calc(78ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-45ic {
+  width: calc(90ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-58ic {
+  width: calc(116ch + var(--input-padding-x) * 2);
+}
+
+.form-control.w-60ic {
+  width: calc(120ch + var(--input-padding-x) * 2);
+}
+
+/* custom spacer width */
+.form-spacer.w-5ic {
+  min-width: calc(10ch + var(--input-padding-x) * 2);
+}
+
+.form-spacer.w-7ic {
+  min-width: calc(14ch + var(--input-padding-x) * 2);
+}
+
+.form-spacer.w-12ic {
+  min-width: calc(24ch + var(--input-padding-x) * 2);
+}
+
+.form-spacer.w-16ic {
+  min-width: calc(32ch + var(--input-padding-x) * 2);
+}
+
+.form-spacer.w-17ic {
+  min-width: calc(34ch + var(--input-padding-x) * 2);
+}

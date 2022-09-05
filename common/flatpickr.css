@@ -1,0 +1,14 @@
+
+.input-flatpickr-date {
+  width:14em;
+}
+
+.input-flatpickr-time {
+  width:10em;
+}
+
+.btn-flatpickr-date,
+.btn-flatpickr-time {
+  border-color: #eda100;
+  color: #f3b000;
+}
